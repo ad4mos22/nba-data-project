@@ -1,8 +1,12 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
+import os
 
-# URL of the game log page
+# Define the player's name or any other variable for the file name
+player_name = 'lebron_james'  # Example player name; can be dynamically set based on the player being scraped
+
+# URL of the game log page, will need to input this dynamically
 url = "https://www.basketball-reference.com/players/j/jamesle01/gamelog/2024"
 
 # Send a GET request to the page
@@ -65,4 +69,4 @@ df = pd.DataFrame(data)
 print(df)
 
 # Save the DataFrame to a CSV file
-df.to_csv('lebron_james_2024_gamelog.csv', index=False)
+df.to_csv('player_gamelog.csv', index=False)

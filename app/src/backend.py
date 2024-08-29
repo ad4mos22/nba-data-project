@@ -19,9 +19,3 @@ class Game:
         self.away_team = away_team
         self.home_team_points = home_team_points
         self.away_team_points = away_team_points
-
-    def scrape_game_data():
-        
-
-    
-def scrape_player_data():
