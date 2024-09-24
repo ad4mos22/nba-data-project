@@ -1,0 +1,37 @@
+{
+    "player_id": "brookdi01",
+    "linear_model_rmse": 245.50027154744686,
+    "random_forest_rmse": 283.05727648697217,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "7": "pstd3",
+            "8": "pstd5",
+            "0": "prevgm",
+            "2": "pavg5",
+            "3": "pavg10",
+            "9": "pstd10",
+            "5": "pmed5",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.3021673679217828,
+            "4": 0.20485835509603156,
+            "7": 0.09868746498198008,
+            "8": 0.09649864611526715,
+            "0": 0.0962330704762921,
+            "2": 0.04845889690770791,
+            "3": 0.04321273597331111,
+            "9": 0.04037965869001317,
+            "5": 0.03908591654315808,
+            "6": 0.030417887294456106
+        }
+    },
+    "linear_model_rmse_points": 6.496089031349345,
+    "linear_model_rmse_rebounds": 1.883916014479147,
+    "linear_model_rmse_assists": 1.3026945803379724,
+    "random_forest_rmse_points": 6.496089031349345,
+    "random_forest_rmse_rebounds": 1.883916014479147,
+    "random_forest_rmse_assists": 1.3026945803379724
+}

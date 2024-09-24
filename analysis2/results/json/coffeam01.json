@@ -1,0 +1,37 @@
+{
+    "player_id": "coffeam01",
+    "linear_model_rmse": 257.7000224414638,
+    "random_forest_rmse": 309.09612933750657,
+    "feature_importance": {
+        "Feature": {
+            "2": "pavg5",
+            "1": "pavg3",
+            "4": "pmed3",
+            "5": "pmed5",
+            "7": "pstd3",
+            "0": "prevgm",
+            "9": "pstd10",
+            "8": "pstd5",
+            "6": "pmed10",
+            "3": "pavg10"
+        },
+        "Importance": {
+            "2": 0.3375506230470368,
+            "1": 0.21656622908471712,
+            "4": 0.13131983452844098,
+            "5": 0.06737960624833779,
+            "7": 0.0629152235439157,
+            "0": 0.05840189370694474,
+            "9": 0.052992029745328434,
+            "8": 0.03919945386901105,
+            "6": 0.020562780188268286,
+            "3": 0.01311232603799914
+        }
+    },
+    "linear_model_rmse_points": 4.394657967761066,
+    "linear_model_rmse_rebounds": 1.6985540248342288,
+    "linear_model_rmse_assists": 1.092248461070451,
+    "random_forest_rmse_points": 4.394657967761066,
+    "random_forest_rmse_rebounds": 1.6985540248342288,
+    "random_forest_rmse_assists": 1.092248461070451
+}

@@ -1,0 +1,37 @@
+{
+    "player_id": "saricda01",
+    "linear_model_rmse": 228.93580111694436,
+    "random_forest_rmse": 260.2398363589345,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "2": "pavg5",
+            "4": "pmed3",
+            "7": "pstd3",
+            "0": "prevgm",
+            "8": "pstd5",
+            "9": "pstd10",
+            "3": "pavg10",
+            "6": "pmed10",
+            "5": "pmed5"
+        },
+        "Importance": {
+            "1": 0.39323982917733125,
+            "2": 0.11113173313683845,
+            "4": 0.11075601978375679,
+            "7": 0.09610955033005388,
+            "0": 0.07413152952031589,
+            "8": 0.06739270261965177,
+            "9": 0.06363115593890475,
+            "3": 0.03425530582120673,
+            "6": 0.02875899846478669,
+            "5": 0.02059317520715391
+        }
+    },
+    "linear_model_rmse_points": 4.532561395034364,
+    "linear_model_rmse_rebounds": 2.261167289800482,
+    "linear_model_rmse_assists": 1.6030980027389445,
+    "random_forest_rmse_points": 4.532561395034364,
+    "random_forest_rmse_rebounds": 2.261167289800482,
+    "random_forest_rmse_assists": 1.6030980027389445
+}

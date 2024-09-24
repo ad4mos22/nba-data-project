@@ -1,0 +1,37 @@
+{
+    "player_id": "millspa02",
+    "linear_model_rmse": 285.50956511408395,
+    "random_forest_rmse": 355.77967847039827,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "2": "pavg5",
+            "4": "pmed3",
+            "0": "prevgm",
+            "7": "pstd3",
+            "8": "pstd5",
+            "5": "pmed5",
+            "9": "pstd10",
+            "3": "pavg10",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.6882136260019586,
+            "2": 0.0814232267119316,
+            "4": 0.07978755263266918,
+            "0": 0.03588729754967568,
+            "7": 0.03432579077627264,
+            "8": 0.020078989857331506,
+            "5": 0.018877278690678623,
+            "9": 0.018570158286776925,
+            "3": 0.014840422245092445,
+            "6": 0.007995657247613003
+        }
+    },
+    "linear_model_rmse_points": 4.189187200210536,
+    "linear_model_rmse_rebounds": 1.030769899261545,
+    "linear_model_rmse_assists": 1.0352418903009364,
+    "random_forest_rmse_points": 4.189187200210536,
+    "random_forest_rmse_rebounds": 1.030769899261545,
+    "random_forest_rmse_assists": 1.0352418903009364
+}

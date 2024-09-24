@@ -1,0 +1,37 @@
+{
+    "player_id": "willibr03",
+    "linear_model_rmse": 1350.1497314051949,
+    "random_forest_rmse": 1301.8643267253312,
+    "feature_importance": {
+        "Feature": {
+            "8": "pstd5",
+            "1": "pavg3",
+            "4": "pmed3",
+            "5": "pmed5",
+            "7": "pstd3",
+            "3": "pavg10",
+            "2": "pavg5",
+            "6": "pmed10",
+            "0": "prevgm",
+            "9": "pstd10"
+        },
+        "Importance": {
+            "8": 0.2299587260278554,
+            "1": 0.1904139133778579,
+            "4": 0.12153173090049735,
+            "5": 0.08298844428133127,
+            "7": 0.07870468834449175,
+            "3": 0.07592471308680682,
+            "2": 0.06512566205021617,
+            "6": 0.05539515025933365,
+            "0": 0.05323470630113578,
+            "9": 0.04672226537047403
+        }
+    },
+    "linear_model_rmse_points": 11.115261193448564,
+    "linear_model_rmse_rebounds": 2.4113055939617585,
+    "linear_model_rmse_assists": 4.00935803821363,
+    "random_forest_rmse_points": 11.115261193448564,
+    "random_forest_rmse_rebounds": 2.4113055939617585,
+    "random_forest_rmse_assists": 4.00935803821363
+}

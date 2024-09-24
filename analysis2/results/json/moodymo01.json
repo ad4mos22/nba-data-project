@@ -1,0 +1,37 @@
+{
+    "player_id": "moodymo01",
+    "linear_model_rmse": 276.94102325621134,
+    "random_forest_rmse": 331.34347120335855,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "2": "pavg5",
+            "7": "pstd3",
+            "4": "pmed3",
+            "0": "prevgm",
+            "8": "pstd5",
+            "5": "pmed5",
+            "9": "pstd10",
+            "3": "pavg10",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.3321216119618131,
+            "2": 0.17726720507909133,
+            "7": 0.12796678370225895,
+            "4": 0.09899388533771425,
+            "0": 0.07373738037357723,
+            "8": 0.06898184113891835,
+            "5": 0.039978105228498886,
+            "9": 0.0375432724764686,
+            "3": 0.023115140205765005,
+            "6": 0.020294774495894296
+        }
+    },
+    "linear_model_rmse_points": 4.825201464986563,
+    "linear_model_rmse_rebounds": 1.7835962692674165,
+    "linear_model_rmse_assists": 0.8821630120774442,
+    "random_forest_rmse_points": 4.825201464986563,
+    "random_forest_rmse_rebounds": 1.7835962692674165,
+    "random_forest_rmse_assists": 0.8821630120774442
+}

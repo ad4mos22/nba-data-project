@@ -1,0 +1,37 @@
+{
+    "player_id": "reidna01",
+    "linear_model_rmse": 216.45248148136002,
+    "random_forest_rmse": 281.45701084592116,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "0": "prevgm",
+            "7": "pstd3",
+            "4": "pmed3",
+            "9": "pstd10",
+            "8": "pstd5",
+            "5": "pmed5",
+            "3": "pavg10",
+            "2": "pavg5",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.4526949217698681,
+            "0": 0.10530692748651012,
+            "7": 0.10397301979272434,
+            "4": 0.10316599671503451,
+            "9": 0.06281989333715941,
+            "8": 0.05426861261757291,
+            "5": 0.03641290282531853,
+            "3": 0.035854399217720816,
+            "2": 0.0272904833910498,
+            "6": 0.018212842847041645
+        }
+    },
+    "linear_model_rmse_points": 5.755274722634559,
+    "linear_model_rmse_rebounds": 2.5575407957879897,
+    "linear_model_rmse_assists": 1.009363870835598,
+    "random_forest_rmse_points": 5.755274722634559,
+    "random_forest_rmse_rebounds": 2.5575407957879897,
+    "random_forest_rmse_assists": 1.009363870835598
+}

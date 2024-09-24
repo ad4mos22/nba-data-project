@@ -1,0 +1,37 @@
+{
+    "player_id": "walkeja01",
+    "linear_model_rmse": 303.88578163802305,
+    "random_forest_rmse": 482.3026841938116,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "9": "pstd10",
+            "7": "pstd3",
+            "0": "prevgm",
+            "2": "pavg5",
+            "3": "pavg10",
+            "8": "pstd5",
+            "5": "pmed5",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.5309021497162792,
+            "4": 0.14827472171667033,
+            "9": 0.0984839013051877,
+            "7": 0.05333005246937698,
+            "0": 0.04336194680460235,
+            "2": 0.041842943458062866,
+            "3": 0.028479860239265898,
+            "8": 0.02084670389225736,
+            "5": 0.02073027979669491,
+            "6": 0.013747440601602386
+        }
+    },
+    "linear_model_rmse_points": 5.0550585529967895,
+    "linear_model_rmse_rebounds": 3.195577094045576,
+    "linear_model_rmse_assists": 1.1276834306799006,
+    "random_forest_rmse_points": 5.0550585529967895,
+    "random_forest_rmse_rebounds": 3.195577094045576,
+    "random_forest_rmse_assists": 1.1276834306799006
+}

@@ -1,0 +1,37 @@
+{
+    "player_id": "pritcpa01",
+    "linear_model_rmse": 354.35403188735097,
+    "random_forest_rmse": 349.7609934533344,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "7": "pstd3",
+            "8": "pstd5",
+            "9": "pstd10",
+            "2": "pavg5",
+            "0": "prevgm",
+            "5": "pmed5",
+            "3": "pavg10",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.5145216078754825,
+            "4": 0.17024682106683883,
+            "7": 0.07097207656665226,
+            "8": 0.049370181108877774,
+            "9": 0.04908880092226044,
+            "2": 0.04382917340858834,
+            "0": 0.03710093239130924,
+            "5": 0.03067714651820542,
+            "3": 0.020181629421053105,
+            "6": 0.014011630720732166
+        }
+    },
+    "linear_model_rmse_points": 6.844996644166035,
+    "linear_model_rmse_rebounds": 2.095285696543486,
+    "linear_model_rmse_assists": 2.7055982606659765,
+    "random_forest_rmse_points": 6.844996644166035,
+    "random_forest_rmse_rebounds": 2.095285696543486,
+    "random_forest_rmse_assists": 2.7055982606659765
+}

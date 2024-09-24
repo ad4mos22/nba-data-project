@@ -1,0 +1,37 @@
+{
+    "player_id": "zubaciv01",
+    "linear_model_rmse": 213.03831840943437,
+    "random_forest_rmse": 224.70783320007024,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "0": "prevgm",
+            "4": "pmed3",
+            "7": "pstd3",
+            "8": "pstd5",
+            "5": "pmed5",
+            "9": "pstd10",
+            "2": "pavg5",
+            "6": "pmed10",
+            "3": "pavg10"
+        },
+        "Importance": {
+            "1": 0.5067236314036037,
+            "0": 0.11752743236356646,
+            "4": 0.09986616132675527,
+            "7": 0.0691862559430463,
+            "8": 0.054407632454811276,
+            "5": 0.041188662685463104,
+            "9": 0.030390973566980516,
+            "2": 0.029542152275564698,
+            "6": 0.026251064628927324,
+            "3": 0.02491603335128147
+        }
+    },
+    "linear_model_rmse_points": 4.746795153339433,
+    "linear_model_rmse_rebounds": 3.3218090722456024,
+    "linear_model_rmse_assists": 1.0651685961955182,
+    "random_forest_rmse_points": 4.746795153339433,
+    "random_forest_rmse_rebounds": 3.3218090722456024,
+    "random_forest_rmse_assists": 1.0651685961955182
+}

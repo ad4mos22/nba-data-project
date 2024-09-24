@@ -1,0 +1,37 @@
+{
+    "player_id": "diabamo01",
+    "linear_model_rmse": 2932.789570493655,
+    "random_forest_rmse": 256.95268865900374,
+    "feature_importance": {
+        "Feature": {
+            "3": "pavg10",
+            "9": "pstd10",
+            "1": "pavg3",
+            "0": "prevgm",
+            "4": "pmed3",
+            "8": "pstd5",
+            "7": "pstd3",
+            "2": "pavg5",
+            "5": "pmed5",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "3": 0.4403425032874191,
+            "9": 0.11844813371475943,
+            "1": 0.11086809686930069,
+            "0": 0.10524709283959131,
+            "4": 0.09000271192824705,
+            "8": 0.06109740149965466,
+            "7": 0.04524201663406296,
+            "2": 0.016077684230468826,
+            "5": 0.007374778912493513,
+            "6": 0.0052995800840022955
+        }
+    },
+    "linear_model_rmse_points": 21.77901367765186,
+    "linear_model_rmse_rebounds": 11.344788051282581,
+    "linear_model_rmse_assists": 3.0012519508967967,
+    "random_forest_rmse_points": 21.77901367765186,
+    "random_forest_rmse_rebounds": 11.344788051282581,
+    "random_forest_rmse_assists": 3.0012519508967967
+}

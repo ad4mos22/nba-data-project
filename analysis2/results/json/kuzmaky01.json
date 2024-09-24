@@ -1,0 +1,37 @@
+{
+    "player_id": "kuzmaky01",
+    "linear_model_rmse": 166.38773624794462,
+    "random_forest_rmse": 194.95304806176134,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "7": "pstd3",
+            "4": "pmed3",
+            "8": "pstd5",
+            "9": "pstd10",
+            "0": "prevgm",
+            "5": "pmed5",
+            "2": "pavg5",
+            "3": "pavg10",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.43577488949298865,
+            "7": 0.09999128722485721,
+            "4": 0.08381335596214588,
+            "8": 0.08281640860090332,
+            "9": 0.0824742386402758,
+            "0": 0.08245399665973482,
+            "5": 0.03581314271947694,
+            "2": 0.03527493094034043,
+            "3": 0.03293149709338615,
+            "6": 0.028656252665890784
+        }
+    },
+    "linear_model_rmse_points": 7.329869708704935,
+    "linear_model_rmse_rebounds": 3.081717342535478,
+    "linear_model_rmse_assists": 2.476769729968294,
+    "random_forest_rmse_points": 7.329869708704935,
+    "random_forest_rmse_rebounds": 3.081717342535478,
+    "random_forest_rmse_assists": 2.476769729968294
+}

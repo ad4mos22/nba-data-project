@@ -1,0 +1,37 @@
+{
+    "player_id": "dosunay01",
+    "linear_model_rmse": 282.56456320556504,
+    "random_forest_rmse": 337.46584416446,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "7": "pstd3",
+            "0": "prevgm",
+            "5": "pmed5",
+            "2": "pavg5",
+            "8": "pstd5",
+            "9": "pstd10",
+            "3": "pavg10",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.5554472678556,
+            "4": 0.19625669399629767,
+            "7": 0.07264707950383088,
+            "0": 0.05692674928852017,
+            "5": 0.03263319526141266,
+            "2": 0.027262906232504883,
+            "8": 0.0227574823610732,
+            "9": 0.01413770577454708,
+            "3": 0.013020263714797588,
+            "6": 0.008910656011415951
+        }
+    },
+    "linear_model_rmse_points": 6.302419460776266,
+    "linear_model_rmse_rebounds": 1.7897336065828795,
+    "linear_model_rmse_assists": 1.9297045124092542,
+    "random_forest_rmse_points": 6.302419460776266,
+    "random_forest_rmse_rebounds": 1.7897336065828795,
+    "random_forest_rmse_assists": 1.9297045124092542
+}

@@ -1,0 +1,37 @@
+{
+    "player_id": "horfoal01",
+    "linear_model_rmse": 277.78553624225566,
+    "random_forest_rmse": 312.4085457759537,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "0": "prevgm",
+            "4": "pmed3",
+            "7": "pstd3",
+            "9": "pstd10",
+            "8": "pstd5",
+            "3": "pavg10",
+            "6": "pmed10",
+            "2": "pavg5",
+            "5": "pmed5"
+        },
+        "Importance": {
+            "1": 0.46614687014297795,
+            "0": 0.12343552503925447,
+            "4": 0.12315235878015403,
+            "7": 0.076661558687933,
+            "9": 0.05040096149822262,
+            "8": 0.039138296064199295,
+            "3": 0.03631819740648344,
+            "6": 0.030690718810455944,
+            "2": 0.029358386497183996,
+            "5": 0.02469712707313521
+        }
+    },
+    "linear_model_rmse_points": 4.680991781711751,
+    "linear_model_rmse_rebounds": 2.38062366493287,
+    "linear_model_rmse_assists": 1.8150850382668906,
+    "random_forest_rmse_points": 4.680991781711751,
+    "random_forest_rmse_rebounds": 2.38062366493287,
+    "random_forest_rmse_assists": 1.8150850382668906
+}

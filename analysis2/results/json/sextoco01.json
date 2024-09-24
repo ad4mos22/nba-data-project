@@ -1,0 +1,37 @@
+{
+    "player_id": "sextoco01",
+    "linear_model_rmse": 268.4636335881702,
+    "random_forest_rmse": 313.1765510510088,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "9": "pstd10",
+            "7": "pstd3",
+            "4": "pmed3",
+            "3": "pavg10",
+            "0": "prevgm",
+            "8": "pstd5",
+            "2": "pavg5",
+            "5": "pmed5",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.45505062943560476,
+            "9": 0.16984664934378124,
+            "7": 0.11037567754359554,
+            "4": 0.10627786110000002,
+            "3": 0.03815466374205764,
+            "0": 0.03237392466579525,
+            "8": 0.026417237552071846,
+            "2": 0.025980736809059,
+            "5": 0.019760899660014274,
+            "6": 0.01576172014802053
+        }
+    },
+    "linear_model_rmse_points": 5.70686679032956,
+    "linear_model_rmse_rebounds": 1.4551845899172122,
+    "linear_model_rmse_assists": 2.32430480363711,
+    "random_forest_rmse_points": 5.70686679032956,
+    "random_forest_rmse_rebounds": 1.4551845899172122,
+    "random_forest_rmse_assists": 2.32430480363711
+}

@@ -1,0 +1,37 @@
+{
+    "player_id": "tateja01",
+    "linear_model_rmse": 248.92480429488145,
+    "random_forest_rmse": 447.69795095319824,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "2": "pavg5",
+            "4": "pmed3",
+            "7": "pstd3",
+            "0": "prevgm",
+            "9": "pstd10",
+            "3": "pavg10",
+            "8": "pstd5",
+            "5": "pmed5",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.42901524357642806,
+            "2": 0.10079849865592899,
+            "4": 0.09657326833257152,
+            "7": 0.08226899035163983,
+            "0": 0.06726001640800831,
+            "9": 0.058250392860869395,
+            "3": 0.04592284548168854,
+            "8": 0.043776138075094444,
+            "5": 0.04224541810181097,
+            "6": 0.033889188155959996
+        }
+    },
+    "linear_model_rmse_points": 3.50275622121208,
+    "linear_model_rmse_rebounds": 2.030650241383823,
+    "linear_model_rmse_assists": 1.238079397871372,
+    "random_forest_rmse_points": 3.50275622121208,
+    "random_forest_rmse_rebounds": 2.030650241383823,
+    "random_forest_rmse_assists": 1.238079397871372
+}

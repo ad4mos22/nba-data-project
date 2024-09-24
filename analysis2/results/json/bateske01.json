@@ -1,0 +1,37 @@
+{
+    "player_id": "bateske01",
+    "linear_model_rmse": 264.7214220287848,
+    "random_forest_rmse": 339.080021066993,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "8": "pstd5",
+            "7": "pstd3",
+            "0": "prevgm",
+            "6": "pmed10",
+            "9": "pstd10",
+            "5": "pmed5",
+            "2": "pavg5",
+            "3": "pavg10"
+        },
+        "Importance": {
+            "1": 0.4971873505291153,
+            "4": 0.18999658833417038,
+            "8": 0.07388915797408219,
+            "7": 0.07200034067188556,
+            "0": 0.05632310423335286,
+            "6": 0.028060330855877513,
+            "9": 0.027371243098839152,
+            "5": 0.021194045330992946,
+            "2": 0.017795676454345336,
+            "3": 0.016182162517338894
+        }
+    },
+    "linear_model_rmse_points": 3.009787950045593,
+    "linear_model_rmse_rebounds": 1.3625008883689136,
+    "linear_model_rmse_assists": 0.821823106223233,
+    "random_forest_rmse_points": 3.009787950045593,
+    "random_forest_rmse_rebounds": 1.3625008883689136,
+    "random_forest_rmse_assists": 0.821823106223233
+}

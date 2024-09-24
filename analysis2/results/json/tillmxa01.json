@@ -1,0 +1,37 @@
+{
+    "player_id": "tillmxa01",
+    "linear_model_rmse": 390.7533611959858,
+    "random_forest_rmse": 390.6764258640722,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "7": "pstd3",
+            "0": "prevgm",
+            "2": "pavg5",
+            "9": "pstd10",
+            "8": "pstd5",
+            "3": "pavg10",
+            "5": "pmed5",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.6320980365020695,
+            "4": 0.10200230270297707,
+            "7": 0.07484549564325298,
+            "0": 0.0492684296970574,
+            "2": 0.038680811074547496,
+            "9": 0.03493709851779679,
+            "8": 0.022705160628888166,
+            "3": 0.016601966627338316,
+            "5": 0.015463967045618296,
+            "6": 0.01339673156045397
+        }
+    },
+    "linear_model_rmse_points": 4.595734244379835,
+    "linear_model_rmse_rebounds": 2.503514865909511,
+    "linear_model_rmse_assists": 1.2070435684738043,
+    "random_forest_rmse_points": 4.595734244379835,
+    "random_forest_rmse_rebounds": 2.503514865909511,
+    "random_forest_rmse_assists": 1.2070435684738043
+}

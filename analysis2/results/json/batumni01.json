@@ -1,0 +1,37 @@
+{
+    "player_id": "batumni01",
+    "linear_model_rmse": 300.2741435488511,
+    "random_forest_rmse": 339.8228871927258,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "0": "prevgm",
+            "7": "pstd3",
+            "4": "pmed3",
+            "2": "pavg5",
+            "8": "pstd5",
+            "5": "pmed5",
+            "9": "pstd10",
+            "3": "pavg10",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.4328114293199488,
+            "0": 0.12367970914741347,
+            "7": 0.11012243586525879,
+            "4": 0.09298834738046279,
+            "2": 0.05917701290761727,
+            "8": 0.04949202157474993,
+            "5": 0.041527246395030006,
+            "9": 0.039047338233139696,
+            "3": 0.025785154028892383,
+            "6": 0.025369305147486924
+        }
+    },
+    "linear_model_rmse_points": 4.036804932812956,
+    "linear_model_rmse_rebounds": 1.865288073523496,
+    "linear_model_rmse_assists": 1.6200459692663987,
+    "random_forest_rmse_points": 4.036804932812956,
+    "random_forest_rmse_rebounds": 1.865288073523496,
+    "random_forest_rmse_assists": 1.6200459692663987
+}

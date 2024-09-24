@@ -1,0 +1,37 @@
+{
+    "player_id": "beaslma01",
+    "linear_model_rmse": 227.94163331881072,
+    "random_forest_rmse": 281.7756492003496,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "7": "pstd3",
+            "0": "prevgm",
+            "8": "pstd5",
+            "2": "pavg5",
+            "9": "pstd10",
+            "3": "pavg10",
+            "5": "pmed5",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.5009835893114374,
+            "4": 0.12448625891901278,
+            "7": 0.11399619703122366,
+            "0": 0.07930060606081832,
+            "8": 0.04057585793194134,
+            "2": 0.035889382256324175,
+            "9": 0.0318602534409524,
+            "3": 0.026611896557011374,
+            "5": 0.02460712002200189,
+            "6": 0.021688838469276734
+        }
+    },
+    "linear_model_rmse_points": 6.432133762735715,
+    "linear_model_rmse_rebounds": 1.9732621513518058,
+    "linear_model_rmse_assists": 1.1085393499444793,
+    "random_forest_rmse_points": 6.432133762735715,
+    "random_forest_rmse_rebounds": 1.9732621513518058,
+    "random_forest_rmse_assists": 1.1085393499444793
+}

@@ -1,0 +1,37 @@
+{
+    "player_id": "templga01",
+    "linear_model_rmse": 361.4925944646421,
+    "random_forest_rmse": 379.50397209652107,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "2": "pavg5",
+            "4": "pmed3",
+            "7": "pstd3",
+            "8": "pstd5",
+            "3": "pavg10",
+            "0": "prevgm",
+            "9": "pstd10",
+            "6": "pmed10",
+            "5": "pmed5"
+        },
+        "Importance": {
+            "1": 0.5736362722123579,
+            "2": 0.10114789101069821,
+            "4": 0.07173806390431188,
+            "7": 0.0654322605721506,
+            "8": 0.04690148205436109,
+            "3": 0.038273374085313686,
+            "0": 0.03220373646991354,
+            "9": 0.027738469927848862,
+            "6": 0.025116263785969917,
+            "5": 0.017812185977074305
+        }
+    },
+    "linear_model_rmse_points": 3.0199300859033187,
+    "linear_model_rmse_rebounds": 1.548631775567933,
+    "linear_model_rmse_assists": 1.4514258447304953,
+    "random_forest_rmse_points": 3.0199300859033187,
+    "random_forest_rmse_rebounds": 1.548631775567933,
+    "random_forest_rmse_assists": 1.4514258447304953
+}

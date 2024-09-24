@@ -1,0 +1,37 @@
+{
+    "player_id": "leonaka01",
+    "linear_model_rmse": 252.20478042359719,
+    "random_forest_rmse": 253.33382977860276,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "7": "pstd3",
+            "9": "pstd10",
+            "2": "pavg5",
+            "5": "pmed5",
+            "3": "pavg10",
+            "0": "prevgm",
+            "6": "pmed10",
+            "8": "pstd5"
+        },
+        "Importance": {
+            "1": 0.4487521784106185,
+            "4": 0.13998539188266915,
+            "7": 0.09436999340757414,
+            "9": 0.06493557641103241,
+            "2": 0.0624440491105745,
+            "5": 0.04563451323667957,
+            "3": 0.04030443991221879,
+            "0": 0.03792916996647381,
+            "6": 0.034245806098955875,
+            "8": 0.03139888156320317
+        }
+    },
+    "linear_model_rmse_points": 7.134255594886604,
+    "linear_model_rmse_rebounds": 2.3693353385816995,
+    "linear_model_rmse_assists": 1.7178142404655063,
+    "random_forest_rmse_points": 7.134255594886604,
+    "random_forest_rmse_rebounds": 2.3693353385816995,
+    "random_forest_rmse_assists": 1.7178142404655063
+}

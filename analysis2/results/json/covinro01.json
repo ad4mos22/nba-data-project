@@ -1,0 +1,37 @@
+{
+    "player_id": "covinro01",
+    "linear_model_rmse": 320.9721807378505,
+    "random_forest_rmse": 366.91964399344425,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "7": "pstd3",
+            "0": "prevgm",
+            "8": "pstd5",
+            "3": "pavg10",
+            "5": "pmed5",
+            "9": "pstd10",
+            "2": "pavg5",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.5938516331672258,
+            "4": 0.13311014043815214,
+            "7": 0.05084930692421278,
+            "0": 0.04875315657463152,
+            "8": 0.041499128533097465,
+            "3": 0.0339442404267637,
+            "5": 0.03310064796243587,
+            "9": 0.023813373306568096,
+            "2": 0.022097896961888897,
+            "6": 0.018980475705023713
+        }
+    },
+    "linear_model_rmse_points": 4.439566074724546,
+    "linear_model_rmse_rebounds": 2.0073928361825093,
+    "linear_model_rmse_assists": 1.013026595941099,
+    "random_forest_rmse_points": 4.439566074724546,
+    "random_forest_rmse_rebounds": 2.0073928361825093,
+    "random_forest_rmse_assists": 1.013026595941099
+}

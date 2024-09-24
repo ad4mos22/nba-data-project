@@ -1,0 +1,37 @@
+{
+    "player_id": "portibo01",
+    "linear_model_rmse": 176.8948096636084,
+    "random_forest_rmse": 227.14763639965798,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "0": "prevgm",
+            "2": "pavg5",
+            "7": "pstd3",
+            "9": "pstd10",
+            "8": "pstd5",
+            "5": "pmed5",
+            "3": "pavg10",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.3814930932030276,
+            "4": 0.1247710331728033,
+            "0": 0.10315593690863914,
+            "2": 0.10301368447523414,
+            "7": 0.0913173850319336,
+            "9": 0.05075791357415604,
+            "8": 0.047429658841682015,
+            "5": 0.04222315677072935,
+            "3": 0.03380669650981496,
+            "6": 0.02203144151197976
+        }
+    },
+    "linear_model_rmse_points": 6.623522324209959,
+    "linear_model_rmse_rebounds": 2.7413369022560685,
+    "linear_model_rmse_assists": 1.040285795185145,
+    "random_forest_rmse_points": 6.623522324209959,
+    "random_forest_rmse_rebounds": 2.7413369022560685,
+    "random_forest_rmse_assists": 1.040285795185145
+}

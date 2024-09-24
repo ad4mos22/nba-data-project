@@ -1,0 +1,37 @@
+{
+    "player_id": "colliza01",
+    "linear_model_rmse": 252.35990241946155,
+    "random_forest_rmse": 275.3040657111723,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "7": "pstd3",
+            "8": "pstd5",
+            "3": "pavg10",
+            "2": "pavg5",
+            "5": "pmed5",
+            "9": "pstd10",
+            "0": "prevgm",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.4639682599153999,
+            "4": 0.21954288950920742,
+            "7": 0.06838399884241406,
+            "8": 0.053911681169096344,
+            "3": 0.03883118002595164,
+            "2": 0.03782933859557033,
+            "5": 0.037700987965632926,
+            "9": 0.03481897479973083,
+            "0": 0.033341013855637196,
+            "6": 0.011671675321359229
+        }
+    },
+    "linear_model_rmse_points": 5.173467123111632,
+    "linear_model_rmse_rebounds": 2.7440259410396517,
+    "linear_model_rmse_assists": 1.5140752140363063,
+    "random_forest_rmse_points": 5.173467123111632,
+    "random_forest_rmse_rebounds": 2.7440259410396517,
+    "random_forest_rmse_assists": 1.5140752140363063
+}

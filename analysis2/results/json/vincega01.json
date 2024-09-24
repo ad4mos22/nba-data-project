@@ -1,0 +1,37 @@
+{
+    "player_id": "vincega01",
+    "linear_model_rmse": 326.4310196210837,
+    "random_forest_rmse": 352.91566931131655,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "7": "pstd3",
+            "8": "pstd5",
+            "5": "pmed5",
+            "0": "prevgm",
+            "2": "pavg5",
+            "9": "pstd10",
+            "6": "pmed10",
+            "3": "pavg10"
+        },
+        "Importance": {
+            "1": 0.42904878984522893,
+            "4": 0.18196726420001402,
+            "7": 0.10605006011458848,
+            "8": 0.06883927578208637,
+            "5": 0.05605648169904246,
+            "0": 0.052907180185936764,
+            "2": 0.03157176727648796,
+            "9": 0.029684956742153077,
+            "6": 0.022994210305729332,
+            "3": 0.020880013848732653
+        }
+    },
+    "linear_model_rmse_points": 4.538474598689462,
+    "linear_model_rmse_rebounds": 1.2981868941278507,
+    "linear_model_rmse_assists": 1.427963295727048,
+    "random_forest_rmse_points": 4.538474598689462,
+    "random_forest_rmse_rebounds": 1.2981868941278507,
+    "random_forest_rmse_assists": 1.427963295727048
+}

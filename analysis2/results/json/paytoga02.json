@@ -1,0 +1,37 @@
+{
+    "player_id": "paytoga02",
+    "linear_model_rmse": 182.4477535605008,
+    "random_forest_rmse": 229.38885178883476,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "7": "pstd3",
+            "4": "pmed3",
+            "2": "pavg5",
+            "0": "prevgm",
+            "9": "pstd10",
+            "8": "pstd5",
+            "3": "pavg10",
+            "5": "pmed5",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.37181396006283746,
+            "7": 0.1272361390826214,
+            "4": 0.12000488711869489,
+            "2": 0.0711935996313896,
+            "0": 0.06420121744485478,
+            "9": 0.06344616594054736,
+            "8": 0.058499037324381664,
+            "3": 0.04745116244888754,
+            "5": 0.03888865216712939,
+            "6": 0.03726517877865593
+        }
+    },
+    "linear_model_rmse_points": 3.885885315991648,
+    "linear_model_rmse_rebounds": 1.8266801357214515,
+    "linear_model_rmse_assists": 1.185716525194324,
+    "random_forest_rmse_points": 3.885885315991648,
+    "random_forest_rmse_rebounds": 1.8266801357214515,
+    "random_forest_rmse_assists": 1.185716525194324
+}

@@ -1,0 +1,37 @@
+{
+    "player_id": "davisan02",
+    "linear_model_rmse": 302.2897219297647,
+    "random_forest_rmse": 316.2899456756827,
+    "feature_importance": {
+        "Feature": {
+            "2": "pavg5",
+            "7": "pstd3",
+            "4": "pmed3",
+            "1": "pavg3",
+            "0": "prevgm",
+            "8": "pstd5",
+            "6": "pmed10",
+            "3": "pavg10",
+            "5": "pmed5",
+            "9": "pstd10"
+        },
+        "Importance": {
+            "2": 0.24242312790769271,
+            "7": 0.15974354382105313,
+            "4": 0.15660684974592531,
+            "1": 0.14243225617239114,
+            "0": 0.1024595668362744,
+            "8": 0.05086340824553909,
+            "6": 0.04610521057893576,
+            "3": 0.03994336844797456,
+            "5": 0.034338029516992774,
+            "9": 0.025084638727221144
+        }
+    },
+    "linear_model_rmse_points": 7.5848775347445745,
+    "linear_model_rmse_rebounds": 3.8231309695012428,
+    "linear_model_rmse_assists": 2.2740196390506364,
+    "random_forest_rmse_points": 7.5848775347445745,
+    "random_forest_rmse_rebounds": 3.8231309695012428,
+    "random_forest_rmse_assists": 2.2740196390506364
+}

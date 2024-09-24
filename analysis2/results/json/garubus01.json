@@ -1,0 +1,37 @@
+{
+    "player_id": "garubus01",
+    "linear_model_rmse": 140.43387376976213,
+    "random_forest_rmse": 299.15568636302623,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "7": "pstd3",
+            "0": "prevgm",
+            "3": "pavg10",
+            "8": "pstd5",
+            "6": "pmed10",
+            "9": "pstd10",
+            "2": "pavg5",
+            "5": "pmed5"
+        },
+        "Importance": {
+            "1": 0.4762618141168754,
+            "4": 0.09349652322756424,
+            "7": 0.08233798727983363,
+            "0": 0.07095400629994422,
+            "3": 0.06328388296774488,
+            "8": 0.058453560156829766,
+            "6": 0.0486573924011947,
+            "9": 0.04027569835553512,
+            "2": 0.03576143529485723,
+            "5": 0.030517699899620738
+        }
+    },
+    "linear_model_rmse_points": 0.9688020547624433,
+    "linear_model_rmse_rebounds": 1.576613666692047,
+    "linear_model_rmse_assists": 0.36608158715966216,
+    "random_forest_rmse_points": 0.9688020547624433,
+    "random_forest_rmse_rebounds": 1.576613666692047,
+    "random_forest_rmse_assists": 0.36608158715966216
+}

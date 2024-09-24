@@ -1,0 +1,37 @@
+{
+    "player_id": "sabondo01",
+    "linear_model_rmse": 200.91405512147884,
+    "random_forest_rmse": 229.83208930254003,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "7": "pstd3",
+            "0": "prevgm",
+            "4": "pmed3",
+            "8": "pstd5",
+            "2": "pavg5",
+            "5": "pmed5",
+            "9": "pstd10",
+            "3": "pavg10",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.4199023316215961,
+            "7": 0.17110570080025983,
+            "0": 0.08672294496204426,
+            "4": 0.08193032955114733,
+            "8": 0.04932988068831211,
+            "2": 0.04794746715488486,
+            "5": 0.04441344715346065,
+            "9": 0.04050070961902872,
+            "3": 0.030223661235257656,
+            "6": 0.027923527214008467
+        }
+    },
+    "linear_model_rmse_points": 6.169891512333032,
+    "linear_model_rmse_rebounds": 3.9856495567847725,
+    "linear_model_rmse_assists": 3.0938946767899522,
+    "random_forest_rmse_points": 6.169891512333032,
+    "random_forest_rmse_rebounds": 3.9856495567847725,
+    "random_forest_rmse_assists": 3.0938946767899522
+}

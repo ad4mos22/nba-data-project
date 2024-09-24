@@ -1,0 +1,37 @@
+{
+    "player_id": "curryst01",
+    "linear_model_rmse": 178.70846008825237,
+    "random_forest_rmse": 189.05752845685944,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "8": "pstd5",
+            "9": "pstd10",
+            "7": "pstd3",
+            "0": "prevgm",
+            "6": "pmed10",
+            "5": "pmed5",
+            "2": "pavg5",
+            "3": "pavg10"
+        },
+        "Importance": {
+            "1": 0.21893489956804735,
+            "4": 0.19777124248441777,
+            "8": 0.11761150706696694,
+            "9": 0.10423055022618716,
+            "7": 0.09683769618536858,
+            "0": 0.08553083258801994,
+            "6": 0.06488187642071047,
+            "5": 0.054965481558110874,
+            "2": 0.03155868029260125,
+            "3": 0.027677233609569703
+        }
+    },
+    "linear_model_rmse_points": 9.029856177211311,
+    "linear_model_rmse_rebounds": 2.4266522423578105,
+    "linear_model_rmse_assists": 2.4624342377390147,
+    "random_forest_rmse_points": 9.029856177211311,
+    "random_forest_rmse_rebounds": 2.4266522423578105,
+    "random_forest_rmse_assists": 2.4624342377390147
+}

@@ -1,0 +1,37 @@
+{
+    "player_id": "simsje01",
+    "linear_model_rmse": 386.7790286790334,
+    "random_forest_rmse": 438.7670748485022,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "8": "pstd5",
+            "7": "pstd3",
+            "0": "prevgm",
+            "9": "pstd10",
+            "2": "pavg5",
+            "5": "pmed5",
+            "3": "pavg10",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.378967267567772,
+            "4": 0.2961616767298166,
+            "8": 0.08348333405506572,
+            "7": 0.06863717332223121,
+            "0": 0.05096562392991997,
+            "9": 0.032475658492873906,
+            "2": 0.03212785593510916,
+            "5": 0.02649455863760375,
+            "3": 0.01635317338190972,
+            "6": 0.014333677947698036
+        }
+    },
+    "linear_model_rmse_points": 2.082200892142299,
+    "linear_model_rmse_rebounds": 2.1620026667670142,
+    "linear_model_rmse_assists": 0.7797110579786435,
+    "random_forest_rmse_points": 2.082200892142299,
+    "random_forest_rmse_rebounds": 2.1620026667670142,
+    "random_forest_rmse_assists": 0.7797110579786435
+}

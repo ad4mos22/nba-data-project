@@ -1,0 +1,37 @@
+{
+    "player_id": "nixda01",
+    "linear_model_rmse": 201.32887675490508,
+    "random_forest_rmse": 187.85349147673568,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "9": "pstd10",
+            "4": "pmed3",
+            "8": "pstd5",
+            "2": "pavg5",
+            "7": "pstd3",
+            "0": "prevgm",
+            "6": "pmed10",
+            "3": "pavg10",
+            "5": "pmed5"
+        },
+        "Importance": {
+            "1": 0.35036498169444535,
+            "9": 0.1472540494049342,
+            "4": 0.09976015401098291,
+            "8": 0.08206594580081246,
+            "2": 0.07944080587219858,
+            "7": 0.06927889089497165,
+            "0": 0.06181073695448135,
+            "6": 0.048686111694740915,
+            "3": 0.0328475306705177,
+            "5": 0.02849079300191497
+        }
+    },
+    "linear_model_rmse_points": 2.017802412393413,
+    "linear_model_rmse_rebounds": 0.5219746581240012,
+    "linear_model_rmse_assists": 0.9515153747820878,
+    "random_forest_rmse_points": 2.017802412393413,
+    "random_forest_rmse_rebounds": 0.5219746581240012,
+    "random_forest_rmse_assists": 0.9515153747820878
+}

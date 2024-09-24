@@ -1,0 +1,37 @@
+{
+    "player_id": "payneca01",
+    "linear_model_rmse": 327.05863491890165,
+    "random_forest_rmse": 339.2011434804746,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "7": "pstd3",
+            "0": "prevgm",
+            "9": "pstd10",
+            "8": "pstd5",
+            "6": "pmed10",
+            "2": "pavg5",
+            "3": "pavg10",
+            "5": "pmed5"
+        },
+        "Importance": {
+            "1": 0.4263040090901016,
+            "4": 0.3412733945429023,
+            "7": 0.06611229200861661,
+            "0": 0.05128247243207915,
+            "9": 0.02705298734169716,
+            "8": 0.024235786564216388,
+            "6": 0.023142115491837673,
+            "2": 0.015193060051786698,
+            "3": 0.01371200177033408,
+            "5": 0.011691880706428284
+        }
+    },
+    "linear_model_rmse_points": 5.296104448126744,
+    "linear_model_rmse_rebounds": 1.6378778062234403,
+    "linear_model_rmse_assists": 1.7843695771765453,
+    "random_forest_rmse_points": 5.296104448126744,
+    "random_forest_rmse_rebounds": 1.6378778062234403,
+    "random_forest_rmse_assists": 1.7843695771765453
+}

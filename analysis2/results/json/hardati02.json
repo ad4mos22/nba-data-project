@@ -1,0 +1,37 @@
+{
+    "player_id": "hardati02",
+    "linear_model_rmse": 205.63970570645859,
+    "random_forest_rmse": 244.88859856336538,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "7": "pstd3",
+            "0": "prevgm",
+            "8": "pstd5",
+            "3": "pavg10",
+            "2": "pavg5",
+            "9": "pstd10",
+            "5": "pmed5",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.48472255132775893,
+            "4": 0.11917338607562439,
+            "7": 0.09097573011846435,
+            "0": 0.06188104549175923,
+            "8": 0.05606749467240269,
+            "3": 0.05333704901857925,
+            "2": 0.05325912176472939,
+            "9": 0.03204614879010187,
+            "5": 0.027258172375916254,
+            "6": 0.021279300364663693
+        }
+    },
+    "linear_model_rmse_points": 7.032814993719586,
+    "linear_model_rmse_rebounds": 1.7578861247663966,
+    "linear_model_rmse_assists": 1.434693199520091,
+    "random_forest_rmse_points": 7.032814993719586,
+    "random_forest_rmse_rebounds": 1.7578861247663966,
+    "random_forest_rmse_assists": 1.434693199520091
+}

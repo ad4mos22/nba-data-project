@@ -1,0 +1,37 @@
+{
+    "player_id": "champju02",
+    "linear_model_rmse": 800.0857346734784,
+    "random_forest_rmse": 491.8315666135791,
+    "feature_importance": {
+        "Feature": {
+            "7": "pstd3",
+            "3": "pavg10",
+            "9": "pstd10",
+            "6": "pmed10",
+            "2": "pavg5",
+            "4": "pmed3",
+            "5": "pmed5",
+            "8": "pstd5",
+            "1": "pavg3",
+            "0": "prevgm"
+        },
+        "Importance": {
+            "7": 0.2515888608846869,
+            "3": 0.17493178412446292,
+            "9": 0.13798925205008084,
+            "6": 0.11966354191772634,
+            "2": 0.10227674210623744,
+            "4": 0.05488568847787757,
+            "5": 0.05199195193777656,
+            "8": 0.04464105003448988,
+            "1": 0.039819945482218295,
+            "0": 0.02221118298444309
+        }
+    },
+    "linear_model_rmse_points": 6.512895585940183,
+    "linear_model_rmse_rebounds": 2.535102994259269,
+    "linear_model_rmse_assists": 1.4875376096732575,
+    "random_forest_rmse_points": 6.512895585940183,
+    "random_forest_rmse_rebounds": 2.535102994259269,
+    "random_forest_rmse_assists": 1.4875376096732575
+}

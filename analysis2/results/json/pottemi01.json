@@ -1,0 +1,37 @@
+{
+    "player_id": "pottemi01",
+    "linear_model_rmse": 681.5497505685113,
+    "random_forest_rmse": 681.5497505685113,
+    "feature_importance": {
+        "Feature": {
+            "0": "prevgm",
+            "1": "pavg3",
+            "2": "pavg5",
+            "3": "pavg10",
+            "4": "pmed3",
+            "5": "pmed5",
+            "6": "pmed10",
+            "7": "pstd3",
+            "8": "pstd5",
+            "9": "pstd10"
+        },
+        "Importance": {
+            "0": 0.0,
+            "1": 0.0,
+            "2": 0.0,
+            "3": 0.0,
+            "4": 0.0,
+            "5": 0.0,
+            "6": 0.0,
+            "7": 0.0,
+            "8": 0.0,
+            "9": 0.0
+        }
+    },
+    "linear_model_rmse_points": 4.134792969826196,
+    "linear_model_rmse_rebounds": 3.0859723560276375,
+    "linear_model_rmse_assists": 0.7857594422457305,
+    "random_forest_rmse_points": 4.134792969826196,
+    "random_forest_rmse_rebounds": 3.0859723560276375,
+    "random_forest_rmse_assists": 0.7857594422457305
+}

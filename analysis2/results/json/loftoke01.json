@@ -1,0 +1,37 @@
+{
+    "player_id": "loftoke01",
+    "linear_model_rmse": 1157.7753279416931,
+    "random_forest_rmse": 554.0219756342832,
+    "feature_importance": {
+        "Feature": {
+            "7": "pstd3",
+            "9": "pstd10",
+            "2": "pavg5",
+            "4": "pmed3",
+            "6": "pmed10",
+            "8": "pstd5",
+            "3": "pavg10",
+            "1": "pavg3",
+            "0": "prevgm",
+            "5": "pmed5"
+        },
+        "Importance": {
+            "7": 0.28516753560532954,
+            "9": 0.17116978674064195,
+            "2": 0.1111373125450663,
+            "4": 0.10320458925889969,
+            "6": 0.08375401662805988,
+            "8": 0.08238405999230038,
+            "3": 0.06747278580841827,
+            "1": 0.041749761858419186,
+            "0": 0.02761139048641096,
+            "5": 0.026348761076453914
+        }
+    },
+    "linear_model_rmse_points": 11.32836958814308,
+    "linear_model_rmse_rebounds": 6.7862423867827015,
+    "linear_model_rmse_assists": 3.201157634748815,
+    "random_forest_rmse_points": 11.32836958814308,
+    "random_forest_rmse_rebounds": 6.7862423867827015,
+    "random_forest_rmse_assists": 3.201157634748815
+}

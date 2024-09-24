@@ -1,0 +1,37 @@
+{
+    "player_id": "mathube01",
+    "linear_model_rmse": 340.051915130465,
+    "random_forest_rmse": 363.4930355125139,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "7": "pstd3",
+            "2": "pavg5",
+            "4": "pmed3",
+            "9": "pstd10",
+            "0": "prevgm",
+            "6": "pmed10",
+            "8": "pstd5",
+            "5": "pmed5",
+            "3": "pavg10"
+        },
+        "Importance": {
+            "1": 0.3464774914645097,
+            "7": 0.1635292804912363,
+            "2": 0.11920828902997234,
+            "4": 0.08053469754404688,
+            "9": 0.06815394317444429,
+            "0": 0.057235397172645655,
+            "6": 0.04376655002970001,
+            "8": 0.043094937996622534,
+            "5": 0.04151116644925865,
+            "3": 0.03648824664756377
+        }
+    },
+    "linear_model_rmse_points": 6.851778114218307,
+    "linear_model_rmse_rebounds": 2.6695143850699896,
+    "linear_model_rmse_assists": 1.8086930280206421,
+    "random_forest_rmse_points": 6.851778114218307,
+    "random_forest_rmse_rebounds": 2.6695143850699896,
+    "random_forest_rmse_assists": 1.8086930280206421
+}

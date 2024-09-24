@@ -1,0 +1,37 @@
+{
+    "player_id": "ballla01",
+    "linear_model_rmse": 311.0270499468181,
+    "random_forest_rmse": 245.98808175120266,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "7": "pstd3",
+            "0": "prevgm",
+            "4": "pmed3",
+            "8": "pstd5",
+            "2": "pavg5",
+            "5": "pmed5",
+            "9": "pstd10",
+            "6": "pmed10",
+            "3": "pavg10"
+        },
+        "Importance": {
+            "1": 0.38946991102739875,
+            "7": 0.11389150857371866,
+            "0": 0.0965791613518306,
+            "4": 0.07395867850686406,
+            "8": 0.06919190575772971,
+            "2": 0.06809764612790255,
+            "5": 0.06407158760619029,
+            "9": 0.060103802697771484,
+            "6": 0.03341845956170986,
+            "3": 0.031217338788883976
+        }
+    },
+    "linear_model_rmse_points": 8.26388296041375,
+    "linear_model_rmse_rebounds": 3.0545378507545906,
+    "linear_model_rmse_assists": 2.746393417668453,
+    "random_forest_rmse_points": 8.26388296041375,
+    "random_forest_rmse_rebounds": 3.0545378507545906,
+    "random_forest_rmse_assists": 2.746393417668453
+}

@@ -1,0 +1,37 @@
+{
+    "player_id": "okekech01",
+    "linear_model_rmse": 338.9580755115884,
+    "random_forest_rmse": 408.0766437945674,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "7": "pstd3",
+            "0": "prevgm",
+            "8": "pstd5",
+            "9": "pstd10",
+            "2": "pavg5",
+            "5": "pmed5",
+            "6": "pmed10",
+            "3": "pavg10"
+        },
+        "Importance": {
+            "1": 0.49524018419568194,
+            "4": 0.18231681707357134,
+            "7": 0.08326021503376539,
+            "0": 0.06386147693610089,
+            "8": 0.03680706369367637,
+            "9": 0.03465599121656624,
+            "2": 0.030504967222689104,
+            "5": 0.028782924554637605,
+            "6": 0.02688421149192896,
+            "3": 0.017686148581382056
+        }
+    },
+    "linear_model_rmse_points": 3.0668571614758835,
+    "linear_model_rmse_rebounds": 1.7103695473930274,
+    "linear_model_rmse_assists": 0.7096517498589244,
+    "random_forest_rmse_points": 3.0668571614758835,
+    "random_forest_rmse_rebounds": 1.7103695473930274,
+    "random_forest_rmse_assists": 0.7096517498589244
+}

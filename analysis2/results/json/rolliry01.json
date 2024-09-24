@@ -1,0 +1,37 @@
+{
+    "player_id": "rolliry01",
+    "linear_model_rmse": 227.83690923684796,
+    "random_forest_rmse": 224.9983090705692,
+    "feature_importance": {
+        "Feature": {
+            "3": "pavg10",
+            "5": "pmed5",
+            "9": "pstd10",
+            "2": "pavg5",
+            "7": "pstd3",
+            "1": "pavg3",
+            "0": "prevgm",
+            "8": "pstd5",
+            "6": "pmed10",
+            "4": "pmed3"
+        },
+        "Importance": {
+            "3": 0.16802034486591041,
+            "5": 0.13695134890354346,
+            "9": 0.11764705882352942,
+            "2": 0.10693863336234945,
+            "7": 0.10588235294117648,
+            "1": 0.08340922159764357,
+            "0": 0.0823529411764706,
+            "8": 0.07586963739998248,
+            "6": 0.06199237067528361,
+            "4": 0.06093609025411064
+        }
+    },
+    "linear_model_rmse_points": 2.545263897908173,
+    "linear_model_rmse_rebounds": 1.4027663538032555,
+    "linear_model_rmse_assists": 0.9957105819946526,
+    "random_forest_rmse_points": 2.545263897908173,
+    "random_forest_rmse_rebounds": 1.4027663538032555,
+    "random_forest_rmse_assists": 0.9957105819946526
+}

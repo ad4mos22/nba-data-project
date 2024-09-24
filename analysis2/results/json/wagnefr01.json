@@ -1,0 +1,37 @@
+{
+    "player_id": "wagnefr01",
+    "linear_model_rmse": 228.8583530864255,
+    "random_forest_rmse": 291.6119965763107,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "7": "pstd3",
+            "8": "pstd5",
+            "4": "pmed3",
+            "2": "pavg5",
+            "0": "prevgm",
+            "5": "pmed5",
+            "9": "pstd10",
+            "6": "pmed10",
+            "3": "pavg10"
+        },
+        "Importance": {
+            "1": 0.38459819908286574,
+            "7": 0.11623322477756913,
+            "8": 0.0910539727984496,
+            "4": 0.08546999595073858,
+            "2": 0.08029007031528412,
+            "0": 0.07390064324448518,
+            "5": 0.058702305094475715,
+            "9": 0.048281222685418755,
+            "6": 0.03280408132609762,
+            "3": 0.028666284724615555
+        }
+    },
+    "linear_model_rmse_points": 6.716408100151351,
+    "linear_model_rmse_rebounds": 2.0601228708798525,
+    "linear_model_rmse_assists": 1.8597897426453758,
+    "random_forest_rmse_points": 6.716408100151351,
+    "random_forest_rmse_rebounds": 2.0601228708798525,
+    "random_forest_rmse_assists": 1.8597897426453758
+}

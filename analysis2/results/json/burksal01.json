@@ -1,0 +1,37 @@
+{
+    "player_id": "burksal01",
+    "linear_model_rmse": 223.4570653671772,
+    "random_forest_rmse": 372.9245576419234,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "8": "pstd5",
+            "7": "pstd3",
+            "0": "prevgm",
+            "2": "pavg5",
+            "9": "pstd10",
+            "5": "pmed5",
+            "3": "pavg10",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.5146959837637071,
+            "4": 0.22937822442845912,
+            "8": 0.0571133658053094,
+            "7": 0.05031298871740445,
+            "0": 0.04302273343011786,
+            "2": 0.029170152070717544,
+            "9": 0.0229627106268572,
+            "5": 0.01993788851210771,
+            "3": 0.01803464953718618,
+            "6": 0.015371303108133451
+        }
+    },
+    "linear_model_rmse_points": 6.047074150044343,
+    "linear_model_rmse_rebounds": 1.5707618021511671,
+    "linear_model_rmse_assists": 1.4329394501201616,
+    "random_forest_rmse_points": 6.047074150044343,
+    "random_forest_rmse_rebounds": 1.5707618021511671,
+    "random_forest_rmse_assists": 1.4329394501201616
+}

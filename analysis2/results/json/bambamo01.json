@@ -1,0 +1,37 @@
+{
+    "player_id": "bambamo01",
+    "linear_model_rmse": 281.46771072769144,
+    "random_forest_rmse": 322.4352131606672,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "2": "pavg5",
+            "7": "pstd3",
+            "0": "prevgm",
+            "8": "pstd5",
+            "5": "pmed5",
+            "6": "pmed10",
+            "9": "pstd10",
+            "3": "pavg10"
+        },
+        "Importance": {
+            "1": 0.3450639555619594,
+            "4": 0.26550778171139366,
+            "2": 0.11812714552924194,
+            "7": 0.08412771437392305,
+            "0": 0.06373820088796639,
+            "8": 0.02928041749725018,
+            "5": 0.028645338990499567,
+            "6": 0.026649992956568207,
+            "9": 0.02309427088827867,
+            "3": 0.015765181602918885
+        }
+    },
+    "linear_model_rmse_points": 3.5508770944580434,
+    "linear_model_rmse_rebounds": 2.071761378556861,
+    "linear_model_rmse_assists": 0.9102294897110986,
+    "random_forest_rmse_points": 3.5508770944580434,
+    "random_forest_rmse_rebounds": 2.071761378556861,
+    "random_forest_rmse_assists": 0.9102294897110986
+}

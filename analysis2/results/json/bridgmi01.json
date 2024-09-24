@@ -1,0 +1,37 @@
+{
+    "player_id": "bridgmi01",
+    "linear_model_rmse": 259.8904815921833,
+    "random_forest_rmse": 337.6801366931037,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "7": "pstd3",
+            "4": "pmed3",
+            "0": "prevgm",
+            "8": "pstd5",
+            "9": "pstd10",
+            "5": "pmed5",
+            "2": "pavg5",
+            "3": "pavg10",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.4499258973664052,
+            "7": 0.13358493796640464,
+            "4": 0.11147521382852503,
+            "0": 0.07641940995408775,
+            "8": 0.06248857246791568,
+            "9": 0.05345524978699833,
+            "5": 0.03340938559919617,
+            "2": 0.031085464898895535,
+            "3": 0.025124631869803734,
+            "6": 0.02303123626176804
+        }
+    },
+    "linear_model_rmse_points": 7.877669877649705,
+    "linear_model_rmse_rebounds": 2.472359496931184,
+    "linear_model_rmse_assists": 1.7897042008636326,
+    "random_forest_rmse_points": 7.877669877649705,
+    "random_forest_rmse_rebounds": 2.472359496931184,
+    "random_forest_rmse_assists": 1.7897042008636326
+}

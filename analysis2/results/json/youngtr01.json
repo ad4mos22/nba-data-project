@@ -1,0 +1,37 @@
+{
+    "player_id": "youngtr01",
+    "linear_model_rmse": 193.83898271113017,
+    "random_forest_rmse": 211.2146560264471,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "7": "pstd3",
+            "0": "prevgm",
+            "4": "pmed3",
+            "2": "pavg5",
+            "5": "pmed5",
+            "9": "pstd10",
+            "3": "pavg10",
+            "8": "pstd5",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.39638920679740747,
+            "7": 0.136996310727471,
+            "0": 0.08525911942541343,
+            "4": 0.08407147646666809,
+            "2": 0.06824230288594936,
+            "5": 0.05427487333734845,
+            "9": 0.05411046051021201,
+            "3": 0.050577609891199846,
+            "8": 0.04642006077927985,
+            "6": 0.023658579179050614
+        }
+    },
+    "linear_model_rmse_points": 8.296105454759502,
+    "linear_model_rmse_rebounds": 1.5874244578097598,
+    "linear_model_rmse_assists": 2.7256541503430634,
+    "random_forest_rmse_points": 8.296105454759502,
+    "random_forest_rmse_rebounds": 1.5874244578097598,
+    "random_forest_rmse_assists": 2.7256541503430634
+}

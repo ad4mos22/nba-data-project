@@ -1,0 +1,37 @@
+{
+    "player_id": "bitadgo01",
+    "linear_model_rmse": 290.9366256927159,
+    "random_forest_rmse": 379.308918095494,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "2": "pavg5",
+            "7": "pstd3",
+            "0": "prevgm",
+            "8": "pstd5",
+            "9": "pstd10",
+            "5": "pmed5",
+            "6": "pmed10",
+            "3": "pavg10"
+        },
+        "Importance": {
+            "1": 0.45230338627487887,
+            "4": 0.12250982514730346,
+            "2": 0.10296279369478634,
+            "7": 0.08850833875750493,
+            "0": 0.05704738573643923,
+            "8": 0.05194889038746201,
+            "9": 0.03607955193279174,
+            "5": 0.03267908039908899,
+            "6": 0.03167064011129958,
+            "3": 0.024290107558444914
+        }
+    },
+    "linear_model_rmse_points": 3.6203583493146314,
+    "linear_model_rmse_rebounds": 2.510164739620942,
+    "linear_model_rmse_assists": 1.132557898026394,
+    "random_forest_rmse_points": 3.6203583493146314,
+    "random_forest_rmse_rebounds": 2.510164739620942,
+    "random_forest_rmse_assists": 1.132557898026394
+}

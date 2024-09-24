@@ -1,0 +1,37 @@
+{
+    "player_id": "highsha01",
+    "linear_model_rmse": 349.6050759864948,
+    "random_forest_rmse": 407.02848247445104,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "8": "pstd5",
+            "4": "pmed3",
+            "0": "prevgm",
+            "3": "pavg10",
+            "7": "pstd3",
+            "9": "pstd10",
+            "2": "pavg5",
+            "6": "pmed10",
+            "5": "pmed5"
+        },
+        "Importance": {
+            "1": 0.6147520564011925,
+            "8": 0.06990789592745532,
+            "4": 0.06611567075383096,
+            "0": 0.05329827077540437,
+            "3": 0.04896322690701964,
+            "7": 0.034797353614101315,
+            "9": 0.033546811939608574,
+            "2": 0.03139571877916217,
+            "6": 0.029018146900857574,
+            "5": 0.018204848001367704
+        }
+    },
+    "linear_model_rmse_points": 5.002309958288307,
+    "linear_model_rmse_rebounds": 2.2023295802573934,
+    "linear_model_rmse_assists": 1.0697395815180943,
+    "random_forest_rmse_points": 5.002309958288307,
+    "random_forest_rmse_rebounds": 2.2023295802573934,
+    "random_forest_rmse_assists": 1.0697395815180943
+}

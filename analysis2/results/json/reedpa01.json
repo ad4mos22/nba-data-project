@@ -1,0 +1,37 @@
+{
+    "player_id": "reedpa01",
+    "linear_model_rmse": 331.6221107512995,
+    "random_forest_rmse": 394.08135876441776,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "7": "pstd3",
+            "8": "pstd5",
+            "9": "pstd10",
+            "0": "prevgm",
+            "2": "pavg5",
+            "3": "pavg10",
+            "5": "pmed5",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.5090263809794907,
+            "4": 0.10758811715276272,
+            "7": 0.08654203353615518,
+            "8": 0.08537947583611426,
+            "9": 0.05757359183211037,
+            "0": 0.051135601984667906,
+            "2": 0.03424916412749666,
+            "3": 0.030600121711790766,
+            "5": 0.022494759241446432,
+            "6": 0.015410753597965102
+        }
+    },
+    "linear_model_rmse_points": 4.646540600146534,
+    "linear_model_rmse_rebounds": 2.6555023794612644,
+    "linear_model_rmse_assists": 1.3872249442578326,
+    "random_forest_rmse_points": 4.646540600146534,
+    "random_forest_rmse_rebounds": 2.6555023794612644,
+    "random_forest_rmse_assists": 1.3872249442578326
+}

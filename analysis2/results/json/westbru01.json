@@ -1,0 +1,37 @@
+{
+    "player_id": "westbru01",
+    "linear_model_rmse": 216.6561479974052,
+    "random_forest_rmse": 326.95628333427806,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "2": "pavg5",
+            "4": "pmed3",
+            "5": "pmed5",
+            "0": "prevgm",
+            "7": "pstd3",
+            "9": "pstd10",
+            "8": "pstd5",
+            "3": "pavg10",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.3014350458279843,
+            "2": 0.17710540210472198,
+            "4": 0.08968024123150453,
+            "5": 0.08534591276896407,
+            "0": 0.07685552408423672,
+            "7": 0.06745201633047161,
+            "9": 0.06562608161367937,
+            "8": 0.05968333235653457,
+            "3": 0.051208556366981246,
+            "6": 0.025607887314921637
+        }
+    },
+    "linear_model_rmse_points": 4.24604948353444,
+    "linear_model_rmse_rebounds": 2.6941533363478043,
+    "linear_model_rmse_assists": 2.718878421653167,
+    "random_forest_rmse_points": 4.24604948353444,
+    "random_forest_rmse_rebounds": 2.6941533363478043,
+    "random_forest_rmse_assists": 2.718878421653167
+}

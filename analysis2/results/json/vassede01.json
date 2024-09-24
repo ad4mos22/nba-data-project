@@ -1,0 +1,37 @@
+{
+    "player_id": "vassede01",
+    "linear_model_rmse": 210.23076748775716,
+    "random_forest_rmse": 262.27487601134175,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "7": "pstd3",
+            "5": "pmed5",
+            "2": "pavg5",
+            "4": "pmed3",
+            "0": "prevgm",
+            "8": "pstd5",
+            "3": "pavg10",
+            "6": "pmed10",
+            "9": "pstd10"
+        },
+        "Importance": {
+            "1": 0.41913152348300636,
+            "7": 0.12305221078327452,
+            "5": 0.09052209166103437,
+            "2": 0.07495358411334678,
+            "4": 0.0626194290547459,
+            "0": 0.054352335788588405,
+            "8": 0.050926894726152805,
+            "3": 0.04611115944366709,
+            "6": 0.04465842705651795,
+            "9": 0.0336723438896659
+        }
+    },
+    "linear_model_rmse_points": 7.23454394797301,
+    "linear_model_rmse_rebounds": 1.8968519030203328,
+    "linear_model_rmse_assists": 2.0692350944835955,
+    "random_forest_rmse_points": 7.23454394797301,
+    "random_forest_rmse_rebounds": 1.8968519030203328,
+    "random_forest_rmse_assists": 2.0692350944835955
+}

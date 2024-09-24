@@ -1,0 +1,37 @@
+{
+    "player_id": "biyombi01",
+    "linear_model_rmse": 328.1392898167553,
+    "random_forest_rmse": 377.744464257916,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "0": "prevgm",
+            "8": "pstd5",
+            "7": "pstd3",
+            "6": "pmed10",
+            "2": "pavg5",
+            "3": "pavg10",
+            "5": "pmed5",
+            "9": "pstd10"
+        },
+        "Importance": {
+            "1": 0.4669981289019629,
+            "4": 0.19558168095743866,
+            "0": 0.06588708621929053,
+            "8": 0.06415705787970553,
+            "7": 0.051270335260161976,
+            "6": 0.03414691368562463,
+            "2": 0.030757745382714176,
+            "3": 0.030642946866802905,
+            "5": 0.030545043101162645,
+            "9": 0.03001306174513614
+        }
+    },
+    "linear_model_rmse_points": 3.390382248230964,
+    "linear_model_rmse_rebounds": 2.9282816744727342,
+    "linear_model_rmse_assists": 1.2485893628508162,
+    "random_forest_rmse_points": 3.390382248230964,
+    "random_forest_rmse_rebounds": 2.9282816744727342,
+    "random_forest_rmse_assists": 1.2485893628508162
+}

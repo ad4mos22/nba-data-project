@@ -1,0 +1,37 @@
+{
+    "player_id": "leverca01",
+    "linear_model_rmse": 219.09263208018643,
+    "random_forest_rmse": 236.91847048584654,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "7": "pstd3",
+            "0": "prevgm",
+            "2": "pavg5",
+            "8": "pstd5",
+            "6": "pmed10",
+            "5": "pmed5",
+            "9": "pstd10",
+            "3": "pavg10"
+        },
+        "Importance": {
+            "1": 0.34459297969374036,
+            "4": 0.2133081947955057,
+            "7": 0.12611135442726024,
+            "0": 0.1137157259948657,
+            "2": 0.05534335551810804,
+            "8": 0.03926996224275723,
+            "6": 0.035466543276773316,
+            "5": 0.028289272971904887,
+            "9": 0.02773466040782863,
+            "3": 0.016167950671255968
+        }
+    },
+    "linear_model_rmse_points": 6.817954257522607,
+    "linear_model_rmse_rebounds": 1.9694001181878973,
+    "linear_model_rmse_assists": 2.898752788297083,
+    "random_forest_rmse_points": 6.817954257522607,
+    "random_forest_rmse_rebounds": 1.9694001181878973,
+    "random_forest_rmse_assists": 2.898752788297083
+}

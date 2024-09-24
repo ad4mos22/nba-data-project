@@ -1,0 +1,37 @@
+{
+    "player_id": "easonta01",
+    "linear_model_rmse": 155.22046548216218,
+    "random_forest_rmse": 216.09588940602694,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "2": "pavg5",
+            "4": "pmed3",
+            "0": "prevgm",
+            "7": "pstd3",
+            "5": "pmed5",
+            "8": "pstd5",
+            "9": "pstd10",
+            "3": "pavg10",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.29736902947245564,
+            "2": 0.19808908251993498,
+            "4": 0.179960953165338,
+            "0": 0.06979335510231505,
+            "7": 0.06851343806852397,
+            "5": 0.05840063271966901,
+            "8": 0.0401446359087885,
+            "9": 0.04000847230672187,
+            "3": 0.025246772378586368,
+            "6": 0.022473628357666697
+        }
+    },
+    "linear_model_rmse_points": 4.937272163193561,
+    "linear_model_rmse_rebounds": 3.00073759997447,
+    "linear_model_rmse_assists": 1.0292761962206207,
+    "random_forest_rmse_points": 4.937272163193561,
+    "random_forest_rmse_rebounds": 3.00073759997447,
+    "random_forest_rmse_assists": 1.0292761962206207
+}

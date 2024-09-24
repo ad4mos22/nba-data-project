@@ -1,0 +1,37 @@
+{
+    "player_id": "meltode01",
+    "linear_model_rmse": 202.5479677047453,
+    "random_forest_rmse": 268.4049909823037,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "7": "pstd3",
+            "0": "prevgm",
+            "5": "pmed5",
+            "2": "pavg5",
+            "3": "pavg10",
+            "9": "pstd10",
+            "8": "pstd5",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.5173920831147434,
+            "4": 0.09827122252750774,
+            "7": 0.07618138385347421,
+            "0": 0.06736850535635203,
+            "5": 0.05909849466746795,
+            "2": 0.039123506626336124,
+            "3": 0.03877626518992974,
+            "9": 0.037718344157587805,
+            "8": 0.03427046576390418,
+            "6": 0.03179972874269706
+        }
+    },
+    "linear_model_rmse_points": 5.5007039334161005,
+    "linear_model_rmse_rebounds": 1.5358795980837363,
+    "linear_model_rmse_assists": 1.6832415582408387,
+    "random_forest_rmse_points": 5.5007039334161005,
+    "random_forest_rmse_rebounds": 1.5358795980837363,
+    "random_forest_rmse_assists": 1.6832415582408387
+}

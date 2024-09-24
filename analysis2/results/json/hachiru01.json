@@ -1,0 +1,37 @@
+{
+    "player_id": "hachiru01",
+    "linear_model_rmse": 364.5655555401286,
+    "random_forest_rmse": 343.484524773422,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "2": "pavg5",
+            "4": "pmed3",
+            "6": "pmed10",
+            "5": "pmed5",
+            "3": "pavg10",
+            "7": "pstd3",
+            "8": "pstd5",
+            "0": "prevgm",
+            "9": "pstd10"
+        },
+        "Importance": {
+            "1": 0.18636547232731368,
+            "2": 0.1745840237185284,
+            "4": 0.1709648327664745,
+            "6": 0.10403585482629421,
+            "5": 0.08010075263999199,
+            "3": 0.0756894453768416,
+            "7": 0.06668445708673885,
+            "8": 0.058709231989642695,
+            "0": 0.04814056987142402,
+            "9": 0.034725359396750054
+        }
+    },
+    "linear_model_rmse_points": 6.540174464288901,
+    "linear_model_rmse_rebounds": 2.5927380597254785,
+    "linear_model_rmse_assists": 1.0885056248924037,
+    "random_forest_rmse_points": 6.540174464288901,
+    "random_forest_rmse_rebounds": 2.5927380597254785,
+    "random_forest_rmse_assists": 1.0885056248924037
+}

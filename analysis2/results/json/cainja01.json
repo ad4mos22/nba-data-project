@@ -1,0 +1,37 @@
+{
+    "player_id": "cainja01",
+    "linear_model_rmse": 978.617492160839,
+    "random_forest_rmse": 614.3747167743302,
+    "feature_importance": {
+        "Feature": {
+            "7": "pstd3",
+            "1": "pavg3",
+            "3": "pavg10",
+            "8": "pstd5",
+            "0": "prevgm",
+            "9": "pstd10",
+            "4": "pmed3",
+            "6": "pmed10",
+            "2": "pavg5",
+            "5": "pmed5"
+        },
+        "Importance": {
+            "7": 0.30112267496839207,
+            "1": 0.24312764295901163,
+            "3": 0.1680728540950944,
+            "8": 0.0783194292546376,
+            "0": 0.06757339596213177,
+            "9": 0.05107262316292849,
+            "4": 0.04743952328649318,
+            "6": 0.019444631678632925,
+            "2": 0.013020841969226404,
+            "5": 0.010806382663451682
+        }
+    },
+    "linear_model_rmse_points": 8.535742243661995,
+    "linear_model_rmse_rebounds": 3.8265485443069434,
+    "linear_model_rmse_assists": 1.0142221904993614,
+    "random_forest_rmse_points": 8.535742243661995,
+    "random_forest_rmse_rebounds": 3.8265485443069434,
+    "random_forest_rmse_assists": 1.0142221904993614
+}

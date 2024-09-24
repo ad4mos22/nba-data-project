@@ -1,0 +1,37 @@
+{
+    "player_id": "mobleev01",
+    "linear_model_rmse": 230.7766547178999,
+    "random_forest_rmse": 298.6603583972938,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "8": "pstd5",
+            "7": "pstd3",
+            "4": "pmed3",
+            "0": "prevgm",
+            "9": "pstd10",
+            "5": "pmed5",
+            "6": "pmed10",
+            "3": "pavg10",
+            "2": "pavg5"
+        },
+        "Importance": {
+            "1": 0.31362584695301265,
+            "8": 0.1538039817910206,
+            "7": 0.13603784008638278,
+            "4": 0.1089735207477514,
+            "0": 0.10622550021669991,
+            "9": 0.05266679393316129,
+            "5": 0.037102299042239474,
+            "6": 0.0356377972319484,
+            "3": 0.034648231858209186,
+            "2": 0.021278188139574213
+        }
+    },
+    "linear_model_rmse_points": 5.908632181144509,
+    "linear_model_rmse_rebounds": 4.004394714115488,
+    "linear_model_rmse_assists": 2.205874385056663,
+    "random_forest_rmse_points": 5.908632181144509,
+    "random_forest_rmse_rebounds": 4.004394714115488,
+    "random_forest_rmse_assists": 2.205874385056663
+}

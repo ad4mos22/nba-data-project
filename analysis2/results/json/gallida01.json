@@ -1,0 +1,37 @@
+{
+    "player_id": "gallida01",
+    "linear_model_rmse": 362.02498972654803,
+    "random_forest_rmse": 631.5062730116473,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "7": "pstd3",
+            "4": "pmed3",
+            "0": "prevgm",
+            "5": "pmed5",
+            "8": "pstd5",
+            "3": "pavg10",
+            "2": "pavg5",
+            "6": "pmed10",
+            "9": "pstd10"
+        },
+        "Importance": {
+            "1": 0.30806526786356303,
+            "7": 0.20361124672828107,
+            "4": 0.10475423992031407,
+            "0": 0.07342396957251818,
+            "5": 0.07078496166248706,
+            "8": 0.060505511039725485,
+            "3": 0.057979530369821064,
+            "2": 0.052260715981805594,
+            "6": 0.035110543111879895,
+            "9": 0.03350401374960462
+        }
+    },
+    "linear_model_rmse_points": 4.354900152684606,
+    "linear_model_rmse_rebounds": 1.8773683024317513,
+    "linear_model_rmse_assists": 1.1246588571342364,
+    "random_forest_rmse_points": 4.354900152684606,
+    "random_forest_rmse_rebounds": 1.8773683024317513,
+    "random_forest_rmse_assists": 1.1246588571342364
+}

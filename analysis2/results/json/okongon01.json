@@ -1,0 +1,37 @@
+{
+    "player_id": "okongon01",
+    "linear_model_rmse": 187.39232279645978,
+    "random_forest_rmse": 228.05949679454662,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "2": "pavg5",
+            "7": "pstd3",
+            "5": "pmed5",
+            "9": "pstd10",
+            "0": "prevgm",
+            "4": "pmed3",
+            "8": "pstd5",
+            "3": "pavg10",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.37237441555580125,
+            "2": 0.24531879423226657,
+            "7": 0.07346628162170123,
+            "5": 0.06785524583449613,
+            "9": 0.05331510716835174,
+            "0": 0.052285830051942865,
+            "4": 0.04777605091244334,
+            "8": 0.04102228215044964,
+            "3": 0.027638235021180606,
+            "6": 0.018947757451366565
+        }
+    },
+    "linear_model_rmse_points": 4.39860405468402,
+    "linear_model_rmse_rebounds": 2.935412508169795,
+    "linear_model_rmse_assists": 1.0671061196033071,
+    "random_forest_rmse_points": 4.39860405468402,
+    "random_forest_rmse_rebounds": 2.935412508169795,
+    "random_forest_rmse_assists": 1.0671061196033071
+}

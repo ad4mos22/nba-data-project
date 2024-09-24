@@ -1,0 +1,37 @@
+{
+    "player_id": "beysa01",
+    "linear_model_rmse": 195.79346929643174,
+    "random_forest_rmse": 229.9103220305484,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "2": "pavg5",
+            "7": "pstd3",
+            "8": "pstd5",
+            "6": "pmed10",
+            "0": "prevgm",
+            "9": "pstd10",
+            "3": "pavg10",
+            "5": "pmed5"
+        },
+        "Importance": {
+            "1": 0.5030912021471496,
+            "4": 0.09169714481780357,
+            "2": 0.08639966308809616,
+            "7": 0.07007898489787769,
+            "8": 0.0598707333410026,
+            "6": 0.05488128253300564,
+            "0": 0.04835116859834687,
+            "9": 0.031032225889658864,
+            "3": 0.028293699760417495,
+            "5": 0.026303894926641643
+        }
+    },
+    "linear_model_rmse_points": 5.59203227468869,
+    "linear_model_rmse_rebounds": 2.652070470041819,
+    "linear_model_rmse_assists": 1.270986510876443,
+    "random_forest_rmse_points": 5.59203227468869,
+    "random_forest_rmse_rebounds": 2.652070470041819,
+    "random_forest_rmse_assists": 1.270986510876443
+}

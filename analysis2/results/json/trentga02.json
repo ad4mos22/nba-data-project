@@ -1,0 +1,37 @@
+{
+    "player_id": "trentga02",
+    "linear_model_rmse": 208.50025139263354,
+    "random_forest_rmse": 236.08284067369948,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "7": "pstd3",
+            "9": "pstd10",
+            "8": "pstd5",
+            "0": "prevgm",
+            "2": "pavg5",
+            "6": "pmed10",
+            "3": "pavg10",
+            "5": "pmed5"
+        },
+        "Importance": {
+            "1": 0.42346389887858493,
+            "4": 0.18877913285395176,
+            "7": 0.08012545361573845,
+            "9": 0.0780644754437897,
+            "8": 0.07490366086759413,
+            "0": 0.05760140157025928,
+            "2": 0.03346466934611951,
+            "6": 0.025680727156196057,
+            "3": 0.020485976395439018,
+            "5": 0.017430603872327224
+        }
+    },
+    "linear_model_rmse_points": 6.496712765886881,
+    "linear_model_rmse_rebounds": 1.902124457421714,
+    "linear_model_rmse_assists": 1.38471942549602,
+    "random_forest_rmse_points": 6.496712765886881,
+    "random_forest_rmse_rebounds": 1.902124457421714,
+    "random_forest_rmse_assists": 1.38471942549602
+}

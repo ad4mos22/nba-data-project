@@ -1,0 +1,37 @@
+{
+    "player_id": "powelno01",
+    "linear_model_rmse": 234.24325160542614,
+    "random_forest_rmse": 255.48380573613872,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "2": "pavg5",
+            "7": "pstd3",
+            "0": "prevgm",
+            "8": "pstd5",
+            "3": "pavg10",
+            "9": "pstd10",
+            "5": "pmed5",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.499435887018385,
+            "4": 0.15947752637968854,
+            "2": 0.09941048595828032,
+            "7": 0.07403843612860406,
+            "0": 0.056898391766252145,
+            "8": 0.03464082830357807,
+            "3": 0.026545476389634844,
+            "9": 0.02265837091405371,
+            "5": 0.016381935201258965,
+            "6": 0.010512661940264482
+        }
+    },
+    "linear_model_rmse_points": 4.8755562833509565,
+    "linear_model_rmse_rebounds": 1.6551869099161938,
+    "linear_model_rmse_assists": 1.0457709076436759,
+    "random_forest_rmse_points": 4.8755562833509565,
+    "random_forest_rmse_rebounds": 1.6551869099161938,
+    "random_forest_rmse_assists": 1.0457709076436759
+}

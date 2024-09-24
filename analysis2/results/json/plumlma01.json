@@ -1,0 +1,37 @@
+{
+    "player_id": "plumlma01",
+    "linear_model_rmse": 252.69879362550483,
+    "random_forest_rmse": 451.91264370114334,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "0": "prevgm",
+            "7": "pstd3",
+            "2": "pavg5",
+            "8": "pstd5",
+            "5": "pmed5",
+            "3": "pavg10",
+            "9": "pstd10",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.506624653931025,
+            "4": 0.14895599287999253,
+            "0": 0.07987161971359565,
+            "7": 0.06778023900375013,
+            "2": 0.05779770602274027,
+            "8": 0.037199139893378315,
+            "5": 0.035066887793079274,
+            "3": 0.025232704772963084,
+            "9": 0.023111959813271795,
+            "6": 0.01835909617620417
+        }
+    },
+    "linear_model_rmse_points": 3.1686181551321173,
+    "linear_model_rmse_rebounds": 2.3703985846151157,
+    "linear_model_rmse_assists": 1.3066703888536542,
+    "random_forest_rmse_points": 3.1686181551321173,
+    "random_forest_rmse_rebounds": 2.3703985846151157,
+    "random_forest_rmse_assists": 1.3066703888536542
+}

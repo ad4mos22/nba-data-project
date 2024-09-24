@@ -1,0 +1,37 @@
+{
+    "player_id": "turnemy01",
+    "linear_model_rmse": 233.83253404167843,
+    "random_forest_rmse": 267.4026852141546,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "0": "prevgm",
+            "7": "pstd3",
+            "6": "pmed10",
+            "5": "pmed5",
+            "2": "pavg5",
+            "8": "pstd5",
+            "3": "pavg10",
+            "4": "pmed3",
+            "9": "pstd10"
+        },
+        "Importance": {
+            "1": 0.3775584855207782,
+            "0": 0.11444848517645172,
+            "7": 0.10849983934046281,
+            "6": 0.07634936739522544,
+            "5": 0.06605860178150791,
+            "2": 0.06413441089225243,
+            "8": 0.06248357461119329,
+            "3": 0.05920693536233205,
+            "4": 0.03667409409902239,
+            "9": 0.03458620582077369
+        }
+    },
+    "linear_model_rmse_points": 6.253611031777054,
+    "linear_model_rmse_rebounds": 2.790767440600502,
+    "linear_model_rmse_assists": 1.2038664928648348,
+    "random_forest_rmse_points": 6.253611031777054,
+    "random_forest_rmse_rebounds": 2.790767440600502,
+    "random_forest_rmse_assists": 1.2038664928648348
+}

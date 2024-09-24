@@ -1,0 +1,37 @@
+{
+    "player_id": "moranja01",
+    "linear_model_rmse": 155.76297343847554,
+    "random_forest_rmse": 219.32724616679778,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "0": "prevgm",
+            "4": "pmed3",
+            "7": "pstd3",
+            "9": "pstd10",
+            "2": "pavg5",
+            "8": "pstd5",
+            "5": "pmed5",
+            "3": "pavg10",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.45328313149777133,
+            "0": 0.1228169142554322,
+            "4": 0.11361853481854767,
+            "7": 0.08470543547735018,
+            "9": 0.06310300248700138,
+            "2": 0.049260865211201994,
+            "8": 0.038220621138260046,
+            "5": 0.029982850013688018,
+            "3": 0.025638116558322304,
+            "6": 0.01937052854242478
+        }
+    },
+    "linear_model_rmse_points": 6.202000247176119,
+    "linear_model_rmse_rebounds": 1.6780111534601534,
+    "linear_model_rmse_assists": 2.2715739697920725,
+    "random_forest_rmse_points": 6.202000247176119,
+    "random_forest_rmse_rebounds": 1.6780111534601534,
+    "random_forest_rmse_assists": 2.2715739697920725
+}

@@ -1,0 +1,37 @@
+{
+    "player_id": "claxtni01",
+    "linear_model_rmse": 184.82505844136713,
+    "random_forest_rmse": 220.8670693260452,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "7": "pstd3",
+            "4": "pmed3",
+            "8": "pstd5",
+            "0": "prevgm",
+            "9": "pstd10",
+            "2": "pavg5",
+            "5": "pmed5",
+            "3": "pavg10",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.5964067953347598,
+            "7": 0.09528046189347902,
+            "4": 0.0951020104388111,
+            "8": 0.07104657439496484,
+            "0": 0.04687767647912646,
+            "9": 0.02687915528645377,
+            "2": 0.019760493015712477,
+            "5": 0.019418745759245005,
+            "3": 0.014695858074561167,
+            "6": 0.014532229322886323
+        }
+    },
+    "linear_model_rmse_points": 4.435434559539296,
+    "linear_model_rmse_rebounds": 3.0308312077886015,
+    "linear_model_rmse_assists": 1.3893276271799078,
+    "random_forest_rmse_points": 4.435434559539296,
+    "random_forest_rmse_rebounds": 3.0308312077886015,
+    "random_forest_rmse_assists": 1.3893276271799078
+}

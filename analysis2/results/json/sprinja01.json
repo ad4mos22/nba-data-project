@@ -1,0 +1,37 @@
+{
+    "player_id": "sprinja01",
+    "linear_model_rmse": 9831.586559372372,
+    "random_forest_rmse": 578.6781250278209,
+    "feature_importance": {
+        "Feature": {
+            "3": "pavg10",
+            "6": "pmed10",
+            "1": "pavg3",
+            "2": "pavg5",
+            "9": "pstd10",
+            "7": "pstd3",
+            "5": "pmed5",
+            "4": "pmed3",
+            "0": "prevgm",
+            "8": "pstd5"
+        },
+        "Importance": {
+            "3": 0.18270947890209713,
+            "6": 0.17968445391911975,
+            "1": 0.1609732588896518,
+            "2": 0.15973456009066198,
+            "9": 0.1513775817042078,
+            "7": 0.050897960745260665,
+            "5": 0.04919612851833906,
+            "4": 0.02751430888351805,
+            "0": 0.021349955992774918,
+            "8": 0.016562312354368752
+        }
+    },
+    "linear_model_rmse_points": 38.93371422583732,
+    "linear_model_rmse_rebounds": 21.334935594496038,
+    "linear_model_rmse_assists": 12.772855111521784,
+    "random_forest_rmse_points": 38.93371422583732,
+    "random_forest_rmse_rebounds": 21.334935594496038,
+    "random_forest_rmse_assists": 12.772855111521784
+}

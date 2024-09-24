@@ -1,0 +1,37 @@
+{
+    "player_id": "hayesja02",
+    "linear_model_rmse": 351.0513686642293,
+    "random_forest_rmse": 370.442724726586,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "7": "pstd3",
+            "2": "pavg5",
+            "5": "pmed5",
+            "9": "pstd10",
+            "0": "prevgm",
+            "8": "pstd5",
+            "6": "pmed10",
+            "3": "pavg10"
+        },
+        "Importance": {
+            "1": 0.6301618692909139,
+            "4": 0.1133669938472464,
+            "7": 0.05164823703964279,
+            "2": 0.04571462071093344,
+            "5": 0.033634159054616454,
+            "9": 0.033412373241377726,
+            "0": 0.02893616597482945,
+            "8": 0.022123620194114315,
+            "6": 0.02076053479349692,
+            "3": 0.020241425852828704
+        }
+    },
+    "linear_model_rmse_points": 3.706655530397217,
+    "linear_model_rmse_rebounds": 2.2480129894985175,
+    "linear_model_rmse_assists": 0.6604385516011961,
+    "random_forest_rmse_points": 3.706655530397217,
+    "random_forest_rmse_rebounds": 2.2480129894985175,
+    "random_forest_rmse_assists": 0.6604385516011961
+}

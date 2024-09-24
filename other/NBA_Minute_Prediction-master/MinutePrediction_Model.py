@@ -10,7 +10,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv('2012-18_playerBoxScore.csv')
+df = pd.read_csv('other/NBA_Minute_Prediction-master/2012-18_playerBoxScore.csv')
 df.head()
 df.columns
 
@@ -25,45 +25,49 @@ dftrim = df[['gmDate','teamAbbr','teamDayOff', 'offLNm1',
 
 x = dftrim.head()
 
-PTStats = df[['gmDate', 'playDispNm','teamAbbr','teamDayOff','playPos','playStat','playMin']]
-sort_stat  = PTStats.sort_values(by = ['playDispNm','gmDate'])
+PTStats = df[['gmDate', 'playDispNm', 'teamAbbr', 'teamDayOff', 'playPos', 'playStat', 'playMin']]
+sort_stat = PTStats.sort_values(by=['playDispNm', 'gmDate'])
 
 df['playDispNm'].value_counts()
 
-pj_tuck = sort_stat[sort_stat['playDispNm'] == 'P.J. Tucker']
-pj_tuck['prevgm'] = pj_tuck.playMin.shift(1)
-pj_tuck['prev5']  = pd.rolling_mean(pj_tuck.playMin,5)
-pj_tuck['prev10']  = pd.rolling_mean(pj_tuck.playMin,10)
-pj_tuck['prev20']  = pd.rolling_mean(pj_tuck.playMin,20)
-pj_tuck['agall'] = (pj_tuck.prevgm+pj_tuck.prev5+pj_tuck.prev10+pj_tuck.prev20)/4
-pj_tuck['agavgs'] = (pj_tuck.prev5+pj_tuck.prev10+pj_tuck.prev20)/3
-pj_tuck['agavgs2'] = (pj_tuck.prev5+pj_tuck.prev10)/2
+pj_tuck = sort_stat[sort_stat['playDispNm'] == 'P.J. Tucker'].copy()
+pj_tuck.loc[:, 'prevgm'] = pj_tuck['playMin'].shift(1)
+pj_tuck.loc[:, 'prev5'] = pj_tuck['playMin'].rolling(window=5).mean()
+pj_tuck.loc[:, 'prev10'] = pj_tuck['playMin'].rolling(window=10).mean()
+pj_tuck.loc[:, 'prev20'] = pj_tuck['playMin'].rolling(window=20).mean()
+pj_tuck.loc[:, 'agall'] = (pj_tuck['prevgm'] + pj_tuck['prev5'] + pj_tuck['prev10'] + pj_tuck['prev20']) / 4
+pj_tuck.loc[:, 'agavgs'] = (pj_tuck['prev5'] + pj_tuck['prev10'] + pj_tuck['prev20']) / 3
+pj_tuck.loc[:, 'agavgs2'] = (pj_tuck['prev5'] + pj_tuck['prev10']) / 2
 
-pj_tuck.dropna(inplace = True)
+pj_tuck.dropna(inplace=True)
 
-list(df.playDispNm.unique())
+list(df['playDispNm'].unique())
 
-sort_stat.corr()
-f, ax = plt.subplots(figsize=(20,18))
-sns.heatmap(sort_stat.corr(), vmax=.8, square=True)
+# Select only numeric columns for correlation calculation
+numeric_cols = sort_stat.select_dtypes(include=['number']).columns
+corr_matrix = sort_stat[numeric_cols].corr()
+
+f, ax = plt.subplots(figsize=(20, 18))
+sns.heatmap(corr_matrix, vmax=.8, square=True)
+plt.show()
 
 def buildTS(df):
     datfrm = pd.DataFrame()
     for i in df.playDispNm.unique():
         pdf = df[df.playDispNm == i].sort_values(by = 'gmDate')
         pdf['prevgm'] = pdf.playMin.shift(1)
-        pdf['pavg3'] = pd.rolling_mean(pdf.playMin,3)
-        pdf['pavg5'] = pd.rolling_mean(pdf.playMin,5)
-        pdf['pavg10'] = pd.rolling_mean(pdf.playMin,10)
-        #pdf['pavg20'] = pd.rolling_mean(pdf.playMin,20)
-        pdf['pmed3'] = pd.rolling_median(pdf.playMin,3)
-        pdf['pmed5'] = pd.rolling_median(pdf.playMin,5)
-        pdf['pmed10'] = pd.rolling_median(pdf.playMin,10)
-        #pdf['pmed20'] = pd.rolling_median(pdf.playMin,20)
-        pdf['pstd3'] = pd.rolling_std(pdf.playMin,3)
-        pdf['pstd5'] = pd.rolling_std(pdf.playMin,5)
-        pdf['pstd10'] = pd.rolling_std(pdf.playMin,10)
-        #pdf['pstd20'] = pd.rolling_std(pdf.playMin,20)
+        pdf['pavg3'] = pdf.playMin.rolling(window=3).mean()
+        pdf['pavg5'] = pdf.playMin.rolling(window=5).mean()
+        pdf['pavg10'] = pdf.playMin.rolling(window=10).mean()
+        #pdf['pavg20'] = pdf.playMin.rolling(window=20).mean()
+        pdf['pmed3'] = pdf.playMin.rolling(window=3).median()
+        pdf['pmed5'] = pdf.playMin.rolling(window=5).median()
+        pdf['pmed10'] = pdf.playMin.rolling(window=10).median()
+        #pdf['pmed20'] = pdf.playMin.rolling(window=20).median()
+        pdf['pstd3'] = pdf.playMin.rolling(window=3).std()
+        pdf['pstd5'] = pdf.playMin.rolling(window=5).std()
+        pdf['pstd10'] = pdf.playMin.rolling(window=10).std()
+        #pdf['pstd20'] = pdf.playMin.rolling(window=20).std()
         #print(pdf.tail)
         datfrm = datfrm.append(pdf.dropna())
         print(len(datfrm))
@@ -118,7 +122,7 @@ sqrt(mean_squared_error(y_test, x_test.pavg3))
 #RF model
 ###############################################################################################
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.grid_search import GridSearchCV
+from sklearn.model_selection import GridSearchCV
 rf = RandomForestRegressor()
 rf.fit(x_train,y_train)
 feature_imp = pd.Series(rf.feature_importances_, index = list(X.columns)).sort_values(ascending = False)

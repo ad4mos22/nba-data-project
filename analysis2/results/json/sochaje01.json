@@ -1,0 +1,37 @@
+{
+    "player_id": "sochaje01",
+    "linear_model_rmse": 301.8615667850363,
+    "random_forest_rmse": 236.79953202565153,
+    "feature_importance": {
+        "Feature": {
+            "7": "pstd3",
+            "1": "pavg3",
+            "0": "prevgm",
+            "4": "pmed3",
+            "2": "pavg5",
+            "9": "pstd10",
+            "8": "pstd5",
+            "3": "pavg10",
+            "6": "pmed10",
+            "5": "pmed5"
+        },
+        "Importance": {
+            "7": 0.41336696781698024,
+            "1": 0.245725819059911,
+            "0": 0.07836003443675411,
+            "4": 0.06589182977596947,
+            "2": 0.05147592726210491,
+            "9": 0.04272302657392234,
+            "8": 0.03888210651863511,
+            "3": 0.028160219581941242,
+            "6": 0.01848374584483642,
+            "5": 0.016930323128945202
+        }
+    },
+    "linear_model_rmse_points": 7.028631841683633,
+    "linear_model_rmse_rebounds": 3.174347605200205,
+    "linear_model_rmse_assists": 1.9759188541190915,
+    "random_forest_rmse_points": 7.028631841683633,
+    "random_forest_rmse_rebounds": 3.174347605200205,
+    "random_forest_rmse_assists": 1.9759188541190915
+}

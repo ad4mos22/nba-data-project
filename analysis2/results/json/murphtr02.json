@@ -1,0 +1,37 @@
+{
+    "player_id": "murphtr02",
+    "linear_model_rmse": 185.08841760664686,
+    "random_forest_rmse": 238.83910599896737,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "2": "pavg5",
+            "5": "pmed5",
+            "3": "pavg10",
+            "7": "pstd3",
+            "0": "prevgm",
+            "8": "pstd5",
+            "9": "pstd10",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.46276526627762604,
+            "4": 0.25497221739233183,
+            "2": 0.12349320155950075,
+            "5": 0.03455614255872351,
+            "3": 0.02908071460944189,
+            "7": 0.027167973909145753,
+            "0": 0.02527585497719935,
+            "8": 0.021967763886464008,
+            "9": 0.013334741987645072,
+            "6": 0.007386122841921614
+        }
+    },
+    "linear_model_rmse_points": 6.906920990951966,
+    "linear_model_rmse_rebounds": 2.1411727593817327,
+    "linear_model_rmse_assists": 1.663492282813836,
+    "random_forest_rmse_points": 6.906920990951966,
+    "random_forest_rmse_rebounds": 2.1411727593817327,
+    "random_forest_rmse_assists": 1.663492282813836
+}

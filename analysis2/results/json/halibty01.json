@@ -1,0 +1,37 @@
+{
+    "player_id": "halibty01",
+    "linear_model_rmse": 213.16791878730578,
+    "random_forest_rmse": 238.94173501783513,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "0": "prevgm",
+            "7": "pstd3",
+            "4": "pmed3",
+            "5": "pmed5",
+            "6": "pmed10",
+            "8": "pstd5",
+            "2": "pavg5",
+            "9": "pstd10",
+            "3": "pavg10"
+        },
+        "Importance": {
+            "1": 0.3281565531931043,
+            "0": 0.18120017270460181,
+            "7": 0.11611050481506438,
+            "4": 0.10546310745595265,
+            "5": 0.054200434350322985,
+            "6": 0.05223103313752431,
+            "8": 0.04935668168894656,
+            "2": 0.04460067319951821,
+            "9": 0.04106110141800883,
+            "3": 0.027619738036956054
+        }
+    },
+    "linear_model_rmse_points": 7.769043221736698,
+    "linear_model_rmse_rebounds": 2.0810761417923618,
+    "linear_model_rmse_assists": 4.056117976100045,
+    "random_forest_rmse_points": 7.769043221736698,
+    "random_forest_rmse_rebounds": 2.0810761417923618,
+    "random_forest_rmse_assists": 4.056117976100045
+}

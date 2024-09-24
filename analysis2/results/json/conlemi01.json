@@ -1,0 +1,37 @@
+{
+    "player_id": "conlemi01",
+    "linear_model_rmse": 164.29094738609984,
+    "random_forest_rmse": 178.50258873988943,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "7": "pstd3",
+            "8": "pstd5",
+            "0": "prevgm",
+            "9": "pstd10",
+            "4": "pmed3",
+            "5": "pmed5",
+            "2": "pavg5",
+            "3": "pavg10",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.3433923282541357,
+            "7": 0.1248894249378074,
+            "8": 0.1241772888872222,
+            "0": 0.10341854918740649,
+            "9": 0.09301260668307713,
+            "4": 0.07369812304070515,
+            "5": 0.03900735438654244,
+            "2": 0.03576428651788744,
+            "3": 0.03394287331985038,
+            "6": 0.028697164785365697
+        }
+    },
+    "linear_model_rmse_points": 5.303335503686624,
+    "linear_model_rmse_rebounds": 1.634227267407908,
+    "linear_model_rmse_assists": 2.389676814519104,
+    "random_forest_rmse_points": 5.303335503686624,
+    "random_forest_rmse_rebounds": 1.634227267407908,
+    "random_forest_rmse_assists": 2.389676814519104
+}

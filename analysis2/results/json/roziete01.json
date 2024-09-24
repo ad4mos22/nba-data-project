@@ -1,0 +1,37 @@
+{
+    "player_id": "roziete01",
+    "linear_model_rmse": 210.6460238472538,
+    "random_forest_rmse": 240.85583503177259,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "4": "pmed3",
+            "7": "pstd3",
+            "0": "prevgm",
+            "9": "pstd10",
+            "8": "pstd5",
+            "2": "pavg5",
+            "6": "pmed10",
+            "5": "pmed5",
+            "3": "pavg10"
+        },
+        "Importance": {
+            "1": 0.3503056503885269,
+            "4": 0.21206324705281263,
+            "7": 0.10399203905905674,
+            "0": 0.08479314355741362,
+            "9": 0.07884043383323205,
+            "8": 0.06265331781614553,
+            "2": 0.03307743783693494,
+            "6": 0.03214638696813214,
+            "5": 0.023674797168049214,
+            "3": 0.018453546319696226
+        }
+    },
+    "linear_model_rmse_points": 7.10100079033533,
+    "linear_model_rmse_rebounds": 1.963754613073404,
+    "linear_model_rmse_assists": 2.8067569603930242,
+    "random_forest_rmse_points": 7.10100079033533,
+    "random_forest_rmse_rebounds": 1.963754613073404,
+    "random_forest_rmse_assists": 2.8067569603930242
+}

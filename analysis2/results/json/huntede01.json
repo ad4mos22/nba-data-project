@@ -1,0 +1,37 @@
+{
+    "player_id": "huntede01",
+    "linear_model_rmse": 242.40671497867385,
+    "random_forest_rmse": 292.0694673015729,
+    "feature_importance": {
+        "Feature": {
+            "1": "pavg3",
+            "0": "prevgm",
+            "7": "pstd3",
+            "4": "pmed3",
+            "8": "pstd5",
+            "3": "pavg10",
+            "2": "pavg5",
+            "5": "pmed5",
+            "9": "pstd10",
+            "6": "pmed10"
+        },
+        "Importance": {
+            "1": 0.4707762306626301,
+            "0": 0.14051043278998182,
+            "7": 0.11359520862580622,
+            "4": 0.07432009073792473,
+            "8": 0.043852941189458934,
+            "3": 0.04197752615622138,
+            "2": 0.036153060494956445,
+            "5": 0.02850979669509344,
+            "9": 0.0280507087815082,
+            "6": 0.022254003866418737
+        }
+    },
+    "linear_model_rmse_points": 6.580382871217224,
+    "linear_model_rmse_rebounds": 2.6202963810830475,
+    "linear_model_rmse_assists": 1.1353344174873352,
+    "random_forest_rmse_points": 6.580382871217224,
+    "random_forest_rmse_rebounds": 2.6202963810830475,
+    "random_forest_rmse_assists": 1.1353344174873352
+}
