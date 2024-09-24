@@ -4,7 +4,13 @@ import os
 import pandas as pd
 
 def load_player_ids(file_path):
-    """Load player IDs from the specified file."""
+    """
+    Load player IDs from the specified file.
+    Args:
+        file_path (str): The path to the file containing player IDs. The file should have lines in the format "name,player_id".
+    Returns:
+        dict: A dictionary where the keys are player IDs and the values are player names.
+    """
     player_ids = {}
     with open(file_path, 'r') as f:
         for line in f:
@@ -13,7 +19,20 @@ def load_player_ids(file_path):
     return player_ids
 
 def load_player_data(player_id, base_data_path):
-    """Load and concatenate season data for a single player."""
+    """
+    Load and concatenate season data for a single player.
+    Args:
+        player_id (str): The ID of the player whose data is to be loaded.
+        base_data_path (str): The base directory path where player data is stored.
+    Returns:
+        pd.DataFrame: A DataFrame containing concatenated season data for the player.
+    Raises:
+        FileNotFoundError: If no season data is found for the given player ID.
+    Notes:
+        - The function expects CSV files named in the format '{player_id}_{season}.csv'.
+        - The function looks for data files for seasons 22 to 24.
+        - If a file for a particular season is not found, it skips that season and prints a message.
+    """
     all_seasons = []
     for season in range(22, 25):  # Seasons 22 to 24
         file_name = f"{player_id}_{season}.csv"

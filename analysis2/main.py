@@ -1,55 +1,54 @@
 # main.py
 
-import os
-import pandas as pd
-from src.data_loader import load_player_ids, load_player_data
-from src.minute_model import predict_player_stats, generate_graphs
+import json
+from src.data_loader import load_player_ids
+from src.minute_model import predict_player_stats, generate_graphs, combine_player_data
 
 DATA_DIR = 'analysis2/database/'
 RESULTS_FILE = 'analysis2/results/predicted_vs_actual.csv'
-JSON_OUTPUT_DIR = 'analysis2/results/json/'
+RMSE_FILE = 'analysis2/results/rmse_values.json'
 
 def main():
-    # Create the JSON output directory if it doesn't exist
-    os.makedirs(JSON_OUTPUT_DIR, exist_ok=True)
+    """
+    Main function to execute the player stats prediction pipeline.
 
+    This function performs the following steps:
+    1. Loads player IDs and names from a specified text file.
+    2. Predicts player statistics using the loaded player IDs.
+    3. Saves the prediction results to a CSV file.
+    4. Saves the Root Mean Square Error (RMSE) values to a JSON file.
+    5. Generates graphical representations of the model's performance.
+
+    Note:
+        The function assumes the existence of certain global variables or constants:
+        - DATA_DIR: Directory containing the data files.
+        - RESULTS_FILE: Path to the CSV file where results will be saved.
+        - RMSE_FILE: Path to the JSON file where RMSE values will be saved.
+
+    Raises:
+        FileNotFoundError: If the player IDs file or any required data files are not found.
+        IOError: If there is an issue in reading/writing files.
+    """
     # Load player IDs and names from the text file
     player_ids = load_player_ids('analysis2/nba_players_w_id.txt')  # {player_id: player_name}
 
-    all_results = []
-    all_features = []
+    # Combine player data from multiple sources into a single dataset
+    all_data = combine_player_data(player_ids, DATA_DIR)
 
-    # Process each player's data
-    for player_id, player_name in player_ids.items():
-        player_folder = os.path.join(DATA_DIR, player_id)  # Path to the player's data folder
-        if os.path.exists(player_folder):  # Check if the folder exists
-            try:
-                df = load_player_data(player_id, DATA_DIR)  # Load player data
-                results_df, features = predict_player_stats(df, player_id, JSON_OUTPUT_DIR)
-                all_results.append(results_df)
-                all_features.append(features)
-            except FileNotFoundError:
-                print(f"No season data found for player ID: {player_id}. Skipping player.")
-            except ValueError as e:
-                print(e)
-        else:
-            print(f"Data folder for player {player_name} (ID: {player_id}) not found.")
-
-    # Concatenate all results into a single DataFrame
-    final_results_df = pd.concat(all_results, ignore_index=True)
+    # Predict player statistics using linear and random forest models
+    results_df, rmse_data = predict_player_stats(DATA_DIR, all_data)
 
     # Save the results to a CSV file
-    final_results_df.to_csv(RESULTS_FILE, index=False)
+    results_df.to_csv(RESULTS_FILE, index=False)
     print(f"Results saved to {RESULTS_FILE}")
 
-    # Calculate and print average feature importance
-    if all_features:
-        avg_features = pd.concat(all_features).groupby(level=0).mean()
-        print("Average Feature Importance:")
-        print(avg_features)
+    # Save the RMSE values to a JSON file
+    with open(RMSE_FILE, 'w') as rmse_file:
+        json.dump(rmse_data, rmse_file, indent=4)
+    print(f"RMSE values saved to {RMSE_FILE}")
 
     # Generate graphical representations of the model's performance
-    generate_graphs(final_results_df)
+    generate_graphs(results_df)
 
 if __name__ == '__main__':
     main()

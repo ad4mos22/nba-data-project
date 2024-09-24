@@ -1,0 +1,10 @@
+{
+    "RMSE Minutes (Linear Model)": 247.942661929856,
+    "RMSE Minutes (Random Forest)": 333.3952023135241,
+    "RMSE Points (Linear Model)": 4.705656706038779,
+    "RMSE Points (Random Forest)": 4.825683036278402,
+    "RMSE Rebounds (Linear Model)": 3.1645440636803004,
+    "RMSE Rebounds (Random Forest)": 3.254531839508795,
+    "RMSE Assists (Linear Model)": 1.447236168317645,
+    "RMSE Assists (Random Forest)": 1.4258801178653109
+}
