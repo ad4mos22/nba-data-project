@@ -5,6 +5,7 @@ from src.data_loader import load_player_ids
 from src.minute_model import predict_player_stats, generate_graphs, combine_player_data
 
 DATA_DIR = 'analysis2/database/'
+RESULTS_DIR = 'analysis2/results/'
 RESULTS_FILE = 'analysis2/results/predicted_vs_actual.csv'
 RMSE_FILE = 'analysis2/results/rmse_values.json'
 
@@ -36,7 +37,7 @@ def main():
     all_data = combine_player_data(player_ids, DATA_DIR)
 
     # Predict player statistics using linear and random forest models
-    results_df, rmse_data = predict_player_stats(DATA_DIR, all_data)
+    results_df, rmse_data = predict_player_stats(all_data)
 
     # Save the results to a CSV file
     results_df.to_csv(RESULTS_FILE, index=False)
@@ -48,7 +49,7 @@ def main():
     print(f"RMSE values saved to {RMSE_FILE}")
 
     # Generate graphical representations of the model's performance
-    generate_graphs(results_df)
+    generate_graphs(results_df, RESULTS_DIR)
 
 if __name__ == '__main__':
     main()

@@ -69,7 +69,7 @@ def buildTS(df):
         pdf['pstd10'] = pdf.playMin.rolling(window=10).std()
         #pdf['pstd20'] = pdf.playMin.rolling(window=20).std()
         #print(pdf.tail)
-        datfrm = datfrm.append(pdf.dropna())
+        datfrm = datfrm._append(pdf.dropna())
         print(len(datfrm))
     return datfrm
 

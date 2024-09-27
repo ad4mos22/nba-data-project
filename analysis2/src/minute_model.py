@@ -55,20 +55,23 @@ def combine_player_data(player_ids, DATA_DIR):
         player_folder = os.path.join(DATA_DIR, player_id)  # Path to the player's data folder
         if os.path.exists(player_folder):  # Check if the folder exists
             try:
+                print(f"Loading data for player: {player_name} (ID: {player_id})")
                 df = load_player_data(player_id, DATA_DIR)  # Load player data
                 df = buildTS(df, player_id)  # Create time series features
                 df = compute_per_minute_stats(df)  # Compute per-minute statistics
                 all_data.append(df)
+                print(f"Data loaded and appended for player: {player_name}")
             except FileNotFoundError:
                 print(f"No season data found for player ID: {player_id}. Skipping player.")
             except ValueError as e:
-                print(e)
+                print(f"ValueError for player ID: {player_id}: {e}")
         else:
             print(f"Data folder for player {player_name} (ID: {player_id}) not found.")
         
-        return all_data
+    print(f"Total players processed: {len(all_data)}")
+    return all_data
 
-def predict_player_stats(data_dir, all_data):
+def predict_player_stats(all_data):
     """
     Predicts player statistics using linear and random forest models.
     Parameters:
@@ -167,20 +170,24 @@ def predict_player_stats(data_dir, all_data):
     return results_df, rmse_data
 
 
-def generate_graphs(df):
+def generate_graphs(df, results_dir):
     """
     Generates and saves scatter plots comparing actual vs. predicted values for various basketball statistics.
 
     Parameters:
     df (pandas.DataFrame): DataFrame containing the actual and predicted values for the following columns:
         - 'Minutes Played': Actual minutes played by the player.
-        - 'Predicted Minutes Played': Predicted minutes played by the player.
+        - 'Predicted Minutes Played (Linear Model)': Predicted minutes played by the linear model.
+        - 'Predicted Minutes Played (Random Forest)': Predicted minutes played by the random forest model.
         - 'Points': Actual points scored by the player.
-        - 'Predicted Points': Predicted points scored by the player.
+        - 'Predicted Points (Linear Model)': Predicted points scored by the linear model.
+        - 'Predicted Points (Random Forest)': Predicted points scored by the random forest model.
         - 'Rebounds': Actual rebounds by the player.
-        - 'Predicted Rebounds': Predicted rebounds by the player.
+        - 'Predicted Rebounds (Linear Model)': Predicted rebounds by the linear model.
+        - 'Predicted Rebounds (Random Forest)': Predicted rebounds by the random forest model.
         - 'Assists': Actual assists by the player.
-        - 'Predicted Assists': Predicted assists by the player.
+        - 'Predicted Assists (Linear Model)': Predicted assists by the linear model.
+        - 'Predicted Assists (Random Forest)': Predicted assists by the random forest model.
 
     The function generates and saves the following plots:
         1. Actual vs. Predicted Minutes Played
@@ -191,47 +198,57 @@ def generate_graphs(df):
     Each plot is saved as a PNG file in the 'analysis2/results/' directory and displayed on the screen.
     """
     
+    # Ensure the results directory exists
+    os.makedirs('analysis2/results', exist_ok=True)
 
     # Plot actual vs. predicted minutes played
     plt.figure(figsize=(10, 6))
-    plt.scatter(df['Minutes Played'], df['Predicted Minutes Played'], alpha=0.5)
+    plt.scatter(df['Minutes Played'], df['Predicted Minutes Played (Linear Model)'], alpha=0.5, label='Linear Model')
+    plt.scatter(df['Minutes Played'], df['Predicted Minutes Played (Random Forest)'], alpha=0.5, label='Random Forest')
     plt.plot([df['Minutes Played'].min(), df['Minutes Played'].max()],
              [df['Minutes Played'].min(), df['Minutes Played'].max()], 'r--')
     plt.xlabel('Actual Minutes Played')
     plt.ylabel('Predicted Minutes Played')
     plt.title('Actual vs. Predicted Minutes Played')
-    plt.savefig('analysis2/results/actual_vs_predicted_minutes.png')
+    plt.legend()
+    plt.savefig(os.path.join(results_dir, 'actual_vs_predicted_minutes.png'))
     plt.show()
 
     # Plot actual vs. predicted points
     plt.figure(figsize=(10, 6))
-    plt.scatter(df['Points'], df['Predicted Points'], alpha=0.5)
+    plt.scatter(df['Points'], df['Predicted Points (Linear Model)'], alpha=0.5, label='Linear Model')
+    plt.scatter(df['Points'], df['Predicted Points (Random Forest)'], alpha=0.5, label='Random Forest')
     plt.plot([df['Points'].min(), df['Points'].max()],
              [df['Points'].min(), df['Points'].max()], 'r--')
     plt.xlabel('Actual Points')
     plt.ylabel('Predicted Points')
     plt.title('Actual vs. Predicted Points')
-    plt.savefig('analysis2/results/actual_vs_predicted_points.png')
+    plt.legend()
+    plt.savefig(os.path.join(results_dir, 'actual_vs_predicted_points.png'))
     plt.show()
 
     # Plot actual vs. predicted rebounds
     plt.figure(figsize=(10, 6))
-    plt.scatter(df['Rebounds'], df['Predicted Rebounds'], alpha=0.5)
+    plt.scatter(df['Rebounds'], df['Predicted Rebounds (Linear Model)'], alpha=0.5, label='Linear Model')
+    plt.scatter(df['Rebounds'], df['Predicted Rebounds (Random Forest)'], alpha=0.5, label='Random Forest')
     plt.plot([df['Rebounds'].min(), df['Rebounds'].max()],
              [df['Rebounds'].min(), df['Rebounds'].max()], 'r--')
     plt.xlabel('Actual Rebounds')
     plt.ylabel('Predicted Rebounds')
     plt.title('Actual vs. Predicted Rebounds')
-    plt.savefig('analysis2/results/actual_vs_predicted_rebounds.png')
+    plt.legend()
+    plt.savefig(os.path.join(results_dir, 'actual_vs_predicted_rebounds.png'))
     plt.show()
 
     # Plot actual vs. predicted assists
     plt.figure(figsize=(10, 6))
-    plt.scatter(df['Assists'], df['Predicted Assists'], alpha=0.5)
+    plt.scatter(df['Assists'], df['Predicted Assists (Linear Model)'], alpha=0.5, label='Linear Model')
+    plt.scatter(df['Assists'], df['Predicted Assists (Random Forest)'], alpha=0.5, label='Random Forest')
     plt.plot([df['Assists'].min(), df['Assists'].max()],
              [df['Assists'].min(), df['Assists'].max()], 'r--')
     plt.xlabel('Actual Assists')
     plt.ylabel('Predicted Assists')
     plt.title('Actual vs. Predicted Assists')
-    plt.savefig('analysis2/results/actual_vs_predicted_assists.png')
+    plt.legend()
+    plt.savefig(os.path.join(results_dir, 'actual_vs_predicted_assists.png'))
     plt.show()
