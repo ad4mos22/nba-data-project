@@ -1,10 +1,9 @@
 # analysis/src/model_training.py
 
 import pandas as pd
-from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.metrics import mean_squared_error
+
 
 def buildTS(df, player_id, stat):
     """
@@ -27,7 +26,14 @@ def buildTS(df, player_id, stat):
     # Drop rows with missing values in the specified stat column
     df = df.dropna(subset=[stat])
 
-    df = df.sort_values(by='Date')
+    # Convert the 'date' column to datetime format
+    df['game_date'] = pd.to_datetime(df['game_date'])
+
+    # Sort the DataFrame by the 'date' column
+    df = df.sort_values(by='game_date')
+
+    # Convert the stat column to numeric, forcing non-numeric values to NaN
+    df[stat] = pd.to_numeric(df[stat], errors='coerce')
 
     # Calculate rolling statistics
     df['prevgm'] = df[stat].shift(1)
@@ -42,7 +48,7 @@ def buildTS(df, player_id, stat):
     df['pstd10'] = df[stat].rolling(window=10).std()
     
     df.dropna(inplace=True)
-    df['Player ID'] = player_id  # Add player ID to the DataFrame
+    df['player_id'] = player_id  # Add player ID to the DataFrame
 
     return df
 

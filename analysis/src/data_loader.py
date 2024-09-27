@@ -1,62 +1,51 @@
-# analysis/src/data_loader.py
-
-import os
+import sqlite3
 import pandas as pd
+import json
+from .model_training import buildTS  # Import the buildTS function
 
-def load_player_ids(file_path):
+def combine_player_data(db_path, stat):
     """
-    Load player IDs from the specified file.
-    Args:
-        file_path (str): The path to the file containing player IDs. The file should have lines in the format "name,player_id".
-    Returns:
-        dict: A dictionary where the keys are player IDs and the values are player names.
-    """
-    player_ids = {}
-    with open(file_path, 'r') as f:
-        for line in f:
-            name, player_id = line.strip().split(',')
-            player_ids[player_id] = name
-    return player_ids
+    Combine player data from the SQLite database into a single dataset.
 
-def load_player_data(player_id, base_data_path):
-    """
-    Load and concatenate season data for a single player.
     Args:
-        player_id (str): The ID of the player whose data is to be loaded.
-        base_data_path (str): The base directory path where player data is stored.
+        db_path (str): Path to the SQLite database.
+        stat (str): The statistic to model.
+
     Returns:
-        pd.DataFrame: A DataFrame containing concatenated season data for the player.
-    Raises:
-        FileNotFoundError: If no season data is found for the given player ID.
-    Notes:
-        - The function expects CSV files named in the format '{player_id}_{season}.csv'.
-        - The function looks for data files for seasons 22 to 24.
-        - If a file for a particular season is not found, it skips that season and prints a message.
+        pd.DataFrame: Combined player data.
     """
-    all_seasons = []
-    for season in range(22, 25):  # Seasons 22 to 24
-        file_name = f"{player_id}_{season}.csv"
-        player_folder = os.path.join(base_data_path, player_id)
-        file_path = os.path.join(player_folder, file_name)
+    conn = sqlite3.connect(db_path)
+    combined_df = pd.DataFrame()  # Initialize an empty DataFrame
+
+    # Retrieve all player IDs and names from the database
+    player_query = "SELECT player_id, player_name FROM players"
+    player_df = pd.read_sql_query(player_query, conn)
+    player_ids = dict(zip(player_df['player_id'], player_df['player_name']))
+
+    for player_id, player_name in player_ids.items():
+        query = """
+        SELECT season_year, data
+        FROM seasons
+        WHERE player_id = ?
+        ORDER BY season_year
+        """
+        df = pd.read_sql_query(query, conn, params=(player_id,))
+        df['player_id'] = player_id
+        df['player_name'] = player_name
+        df['data'] = df['data'].apply(json.loads)  # Parse JSON data
+        df = df.explode('data')  # Explode JSON data into individual rows
+        df = df[df['data'].apply(lambda x: stat in x and 'date' in x)]  # Filter by statistic and ensure 'Date' is present
+        df[stat] = df['data'].apply(lambda x: x[stat])  # Extract statistic
+        df['game_date'] = df['data'].apply(lambda x: x['date'])  # Extract date and rename to 'game_date'
+        df['team'] = df['data'].apply(lambda x: x['team'])  # Extract team and rename to 'team'
+        df['opponent'] = df['data'].apply(lambda x: x['opponent'])
+        df = df.drop(columns=['data'])  # Drop the original data column
+
+        # Build the time series for the current player
+        ts_df = buildTS(df, player_id, stat)
         
-        if os.path.isfile(file_path):
-            season_data = pd.read_csv(file_path)
-            season_data['Season'] = season  # Add a column for the season
-            all_seasons.append(season_data)
-        else:
-            print(f"File not found: {file_path}. Skipping this season.")
-    
-    if all_seasons:
-        return pd.concat(all_seasons, ignore_index=True)
-    else:
-        raise FileNotFoundError(f"No season data found for player ID: {player_id}")
-    
+        # Concatenate the current player's DataFrame with the combined DataFrame
+        combined_df = pd.concat([combined_df, ts_df], ignore_index=True)
 
-# Example usage
-"""""""""
-player_id = 'achiupr01'
-base_data_path = 'analysis2/database/'
-player_data = load_player_data(player_id, base_data_path)
-print(player_data.head())
-"""""""""
-
+    conn.close()
+    return combined_df

@@ -4,54 +4,12 @@ import pandas as pd
 import numpy as np
 from sklearn.metrics import mean_squared_error
 from math import sqrt
-import matplotlib.pyplot as plt
-import os
-
-from .data_loader import load_player_data
-from .model_training import buildTS, build_TrainTest, RunLinearModel, randomForest
 
 
-def combine_player_data(player_ids, DATA_DIR, stat=' '):
-    """
-    Combines player data from multiple sources into a single dataset.
-    Args:
-        player_ids (dict): A dictionary where keys are player IDs and values are player names.
-        DATA_DIR (str): The directory where player data is stored.
-        stat (str): The statistic to compute per-minute (default is an empty string).
-    Returns:
-        list: A list of DataFrames, each containing the combined data for a player.
-    Raises:
-        FileNotFoundError: If the player's data file is not found.
-        ValueError: If there is an issue with the data format or content.
-    Notes:
-        - The function loads player data, creates time series features, and computes per-minute statistics.
-        - If a player's data folder does not exist, a message is printed and the player is skipped.
-        - If there is no season data for a player, a message is printed and the player is skipped.
-    """
-
-    all_data = []
-    # Load and combine data for all players
-    for player_id, player_name in player_ids.items():
-        player_folder = os.path.join(DATA_DIR, player_id)  # Path to the player's data folder
-        if os.path.exists(player_folder):  # Check if the folder exists
-            try:
-                print(f"Loading data for player: {player_name} (ID: {player_id})")
-                df = load_player_data(player_id, DATA_DIR)  # Load player data
-                df = buildTS(df, player_id, stat)  # Create time series features
-                all_data.append(df)
-                print(f"Data loaded and appended for player: {player_name}")
-            except FileNotFoundError:
-                print(f"No season data found for player ID: {player_id}. Skipping player.")
-            except ValueError as e:
-                print(f"ValueError for player ID: {player_id}: {e}")
-        else:
-            print(f"Data folder for player {player_name} (ID: {player_id}) not found.")
-        
-    print(f"Total players processed: {len(all_data)}")
-    return all_data
+from .model_training import build_TrainTest, RunLinearModel, randomForest
 
 
-def predict_player_stat(all_data, stat='Points'):
+def predict_player_stat(combined_df, stat='Points'):
     """
     Predicts player statistics using linear and random forest models.
     Parameters:
@@ -65,18 +23,15 @@ def predict_player_stat(all_data, stat='Points'):
     ValueError: If there is not enough data for training or testing.
     """
 
-    # Combine all players' data into a single DataFrame
-    combined_df = pd.concat(all_data, ignore_index=True)
-
     # Convert object dtype columns to inferred types
     combined_df = combined_df.infer_objects(copy=False)
 
-    # Handle missing values by interpolating them
-    combined_df.interpolate(method='linear', inplace=True)
+    # Drop rows with missing values
+    combined_df.dropna(inplace=True)
 
     # Split data into training and testing sets
-    train_df = combined_df[combined_df['Season'].isin([22, 23])]
-    test_df = combined_df[combined_df['Season'] == 24]
+    train_df = combined_df[combined_df['season_year'].isin([22, 23])]
+    test_df = combined_df[combined_df['season_year'] == 24]
 
     if train_df.empty or test_df.empty:
         raise ValueError("Not enough data for training or testing.")
@@ -92,8 +47,8 @@ def predict_player_stat(all_data, stat='Points'):
     yhat_rf, features = randomForest(x_train, y_train, x_test)
 
     # Use yhat_lm and yhat_rf for predictions
-    predicted_stat_lm = yhat_lm
-    predicted_stat_rf = yhat_rf
+    predicted_stat_lm = np.clip(yhat_lm, 0, None)
+    predicted_stat_rf = np.clip(yhat_rf, 0, None)
 
     # Extract actual statistics from the original DataFrame using the indices of x_test
     actual_stat = test_df[stat].values
@@ -119,10 +74,10 @@ def predict_player_stat(all_data, stat='Points'):
 
     # Create a DataFrame to display the results
     results_df = pd.DataFrame({
-        'Player ID': test_df['Player ID'],
-        'Date': test_df['Date'],
-        'Team': test_df['Team'],
-        'Opponent': test_df['Opponent'],
+        'Player ID': test_df['player_id'],
+        'Date': test_df['game_date'],
+        'Team': test_df['team'],
+        'Opponent': test_df['opponent'],
         stat: actual_stat,
         f'Predicted {stat} (Linear Model)': predicted_stat_lm,
         f'Predicted {stat} (Random Forest)': predicted_stat_rf

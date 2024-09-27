@@ -8,7 +8,7 @@ sys.path.append('/Users/adamdvorak/Ematiq/nba-data-project')
 from analysis.src.data_loader import load_player_ids
 
 def migrate_data():
-    from analysis.src.database import insert_player_data  # Import inside the function to avoid circular import
+    from analysis.utils.database import insert_player_data  # Import inside the function to avoid circular import
 
     player_ids = load_player_ids('analysis/nba_players_w_id.txt')
     

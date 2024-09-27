@@ -1,4 +1,4 @@
 {
-    "RMSE Assists (Linear Model)": 1.2790966580539156,
-    "RMSE Assists (Random Forest)": 1.3685266154513418
+    "RMSE assists (Linear Model)": 1.2441538166190331,
+    "RMSE assists (Random Forest)": 0.6949695576391088
 }
