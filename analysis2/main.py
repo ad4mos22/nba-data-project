@@ -1,5 +1,3 @@
-# main.py
-
 import json
 from src.data_loader import load_player_ids
 from src.minute_model import predict_player_stats, generate_graphs, combine_player_data
@@ -22,13 +20,6 @@ def main():
 
     Note:
         The function assumes the existence of certain global variables or constants:
-        - DATA_DIR: Directory containing the data files.
-        - RESULTS_FILE: Path to the CSV file where results will be saved.
-        - RMSE_FILE: Path to the JSON file where RMSE values will be saved.
-
-    Raises:
-        FileNotFoundError: If the player IDs file or any required data files are not found.
-        IOError: If there is an issue in reading/writing files.
     """
     # Load player IDs and names from the text file
     player_ids = load_player_ids('analysis2/nba_players_w_id.txt')  # {player_id: player_name}
@@ -51,5 +42,5 @@ def main():
     # Generate graphical representations of the model's performance
     generate_graphs(results_df, RESULTS_DIR)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

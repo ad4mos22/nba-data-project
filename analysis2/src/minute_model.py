@@ -1,6 +1,7 @@
 # analysis2/src/minute_model.py
 
 import pandas as pd
+import numpy as np
 from sklearn.metrics import mean_squared_error
 from math import sqrt
 import matplotlib.pyplot as plt
@@ -71,6 +72,7 @@ def combine_player_data(player_ids, DATA_DIR):
     print(f"Total players processed: {len(all_data)}")
     return all_data
 
+
 def predict_player_stats(all_data):
     """
     Predicts player statistics using linear and random forest models.
@@ -88,6 +90,12 @@ def predict_player_stats(all_data):
 
     # Combine all players' data into a single DataFrame
     combined_df = pd.concat(all_data, ignore_index=True)
+
+    # Convert object dtype columns to inferred types
+    combined_df = combined_df.infer_objects(copy=False)
+
+    # Handle missing values by interpolating them
+    combined_df.interpolate(method='linear', inplace=True)
 
     # Split data into training and testing sets
     train_df = combined_df[combined_df['Season'].isin([22, 23])]
@@ -110,20 +118,45 @@ def predict_player_stats(all_data):
     predicted_minutes_lm = yhat_lm
     predicted_minutes_rf = yhat_rf
 
-    # Predict other statistics based on predicted minutes
-    predicted_points_lm = predicted_minutes_lm * combined_df['Points Per Minute'].mean()
-    predicted_rebounds_lm = predicted_minutes_lm * combined_df['Rebounds Per Minute'].mean()
-    predicted_assists_lm = predicted_minutes_lm * combined_df['Assists Per Minute'].mean()
+    # Predict other statistics based on predicted minutes and individual stats per minute
+    predicted_points_lm = predicted_minutes_lm * test_df['Points Per Minute'].values
+    predicted_rebounds_lm = predicted_minutes_lm * test_df['Rebounds Per Minute'].values
+    predicted_assists_lm = predicted_minutes_lm * test_df['Assists Per Minute'].values
 
-    predicted_points_rf = predicted_minutes_rf * combined_df['Points Per Minute'].mean()
-    predicted_rebounds_rf = predicted_minutes_rf * combined_df['Rebounds Per Minute'].mean()
-    predicted_assists_rf = predicted_minutes_rf * combined_df['Assists Per Minute'].mean()
+    predicted_points_rf = predicted_minutes_rf * test_df['Points Per Minute'].values
+    predicted_rebounds_rf = predicted_minutes_rf * test_df['Rebounds Per Minute'].values
+    predicted_assists_rf = predicted_minutes_rf * test_df['Assists Per Minute'].values
 
     # Extract actual statistics from the original DataFrame using the indices of x_test
     actual_minutes = test_df['Minutes Played'].values
     actual_points = test_df['Points'].values
     actual_rebounds = test_df['Rebounds'].values
     actual_assists = test_df['Assists'].values
+
+    # Handle NaN values by removing corresponding entries
+    mask = ~np.isnan(actual_points) & ~np.isnan(predicted_points_lm)
+    actual_points = actual_points[mask]
+    predicted_points_lm = predicted_points_lm[mask]
+
+    mask = ~np.isnan(actual_points) & ~np.isnan(predicted_points_rf)
+    actual_points = actual_points[mask]
+    predicted_points_rf = predicted_points_rf[mask]
+
+    mask = ~np.isnan(actual_rebounds) & ~np.isnan(predicted_rebounds_lm)
+    actual_rebounds = actual_rebounds[mask]
+    predicted_rebounds_lm = predicted_rebounds_lm[mask]
+
+    mask = ~np.isnan(actual_rebounds) & ~np.isnan(predicted_rebounds_rf)
+    actual_rebounds = actual_rebounds[mask]
+    predicted_rebounds_rf = predicted_rebounds_rf[mask]
+
+    mask = ~np.isnan(actual_assists) & ~np.isnan(predicted_assists_lm)
+    actual_assists = actual_assists[mask]
+    predicted_assists_lm = predicted_assists_lm[mask]
+
+    mask = ~np.isnan(actual_assists) & ~np.isnan(predicted_assists_rf)
+    actual_assists = actual_assists[mask]
+    predicted_assists_rf = predicted_assists_rf[mask]
 
     # Calculate RMSE for the predicted statistics
     rmse_minutes_lm = sqrt(mean_squared_error(actual_minutes, predicted_minutes_lm))
@@ -168,7 +201,6 @@ def predict_player_stats(all_data):
     })
 
     return results_df, rmse_data
-
 
 def generate_graphs(df, results_dir):
     """
